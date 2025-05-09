@@ -3,20 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>리디북스</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
     <link rel="stylesheet" href="./css/main.css">
+
 </head>
 <body>
+
+    <!-- header -->
     <header>
         <nav>
-            <a href=""><img src="" alt="logo"></a>
+            <a href=""><img src="img/logo_ridi.svg" alt="logo"></a>
             <div>
                 <form>
-                    <i class="fa-solid fa-magnifying-glass" id="magnifying_glass"></i>
+                    <i class="fa-solid fa-magnifying-glass" id="mgf_glass"></i>
                     <input type="search">
                 </form>
                 <a href="#">회원가입</a>
+                <p>&dot;</p>
                 <a href="#">로그인</a>
             </div>
         </nav>
@@ -26,14 +32,35 @@
                 <a href="#">만화</a>
                 <a href="#">웹소설</a>
                 <a href="#">도서</a>
-                <a href="#">셀렉트</a>                
+                <a href="#">셀렉트</a>
             </div>
             <div>
                 <a href="#"><i class="fa-solid fa-bars"></i>
                     전체 카테고리</a>
-                <a href="#">캐시충전</a>                
+                <a href="#"><img src="img/cash.svg" alt="cash">
+                    캐시충전</a>                
             </div>
         </div>
     </header>
+
+    <!-- area -->
+     <div id="area">
+        <ul>
+            <li>추천</li>
+            <li>기획전</li>
+            <li>소설</li>
+            <li>인문/사회/역사</li>
+            <li>경영/경제</li>
+            <li>자기계발</li>
+            <li>에세이/시</li>
+        </ul>
+     </div>
+
+     <!-- slider -->
+      <div id="slider">
+        <div id="slider_wrap"></div>
+      </div>
+
+
 </body>
 </html>
