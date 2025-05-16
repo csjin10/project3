@@ -10,6 +10,9 @@
 
     <link rel="stylesheet" href="./css/main.css">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+
 </head>
 
 <body>
@@ -375,7 +378,7 @@
                         <p>&lt;동네 공원&gt; 출간+1,000P 기대평 이벤트</p>
                         <div><span>20</span>/20</div>
                     </div>
-                </div>               
+                </div>
             </div>
             <span class="prev"><i class="fa-solid fa-chevron-left"></i></span>
             <span class="next"><i class="fa-solid fa-chevron-right"></i></span>
@@ -443,7 +446,7 @@
 
 
     <!-- section1 -->
-     <section id="sec1">
+    <section id="sec1">
         <div>
             <h2>오늘, 리디의 발견</h2>
             <div class="sec1_slider">
@@ -451,78 +454,78 @@
                     <li>
                         <div style="background-image: url(./img/sec1_book1.webp);">
                             <p>11권 세트</p>
-                            <div><img src="./img/sec1_rent.webp" alt=""></div>
+                            <div>
+                                <div class="rent"><img src="./img/sec1_rent.webp" alt=""></div>
+                            </div>
                         </div>
                         <p>지도로 읽는다<br>
-                        세트100% 포백</p>
+                            세트100% 포백</p>
                     </li>
                     <li>
                         <div style="background-image: url(./img/sec1_book2.webp);">
                             <div>
-                                <img src="./img/sec1_10sale_1.webp" alt="">
-                                <img src="./img/sec1_10sale_2.webp" alt="">
-                                <img src="./img/sec1_10sale_3.webp" alt="">
-                                <img src="./img/sec1_10sale_4.webp" alt="">
-                                <img src="./img/sec1_10sale_5.webp" alt="">
+                                <div class="sale">
+                                    <img src="./img/sec1_10sale.webp" alt="">
+                                </div>
                             </div>
                         </div>
                         <p>유시민의 이정표<br>
-                        15권의 고전</p>
+                            15권의 고전</p>
                     </li>
                     <li>
                         <div style="background-image: url(./img/sec1_book3.webp);">
                             <div>
-                                <img src="./img/sec1_10sale_1.webp" alt="">
-                                <img src="./img/sec1_10sale_2.webp" alt="">
-                                <img src="./img/sec1_10sale_3.webp" alt="">
-                                <img src="./img/sec1_10sale_4.webp" alt="">
-                                <img src="./img/sec1_10sale_5.webp" alt="">
-                            </div>
-                            <div>
-                                <img src="./img/sec1_rent.webp" alt="">
+                                <div class="sale">
+                                    <img src="./img/sec1_10sale.webp" alt="">
+                                </div>
+                                <div class="rent">
+                                    <img src="./img/sec1_rent.webp" alt="">
+                                </div>
                             </div>
                         </div>
                         <p>법의 체면이란?<br>
-                        도진기 신작소설집</p>
+                            도진기 신작소설집</p>
                     </li>
                     <li>
                         <div style="background-image: url(./img/sec1_book4.webp);">
                             <div>
-                                <img src="./img/sec1_select.webp" alt="">
+                                <div class="select">
+                                    <img src="./img/sec1_select.webp" alt="">
+                                </div>
                             </div>
                         </div>
                         <p>워너브라더스<br>
-                        영화로 탄생 예정</p>
+                            영화로 탄생 예정</p>
                     </li>
                     <li>
                         <div style="background-image: url(./img/sec1_book5.webp);">
                             <div>
-                                <img src="./img/sec1_select.webp" alt="">
+                                <div class="select">
+                                    <img src="./img/sec1_select.webp" alt="">
+                                </div>
                             </div>
                         </div>
                         <p>동명의 드라마<br>
-                        6월 공개!</p>
+                            6월 공개!</p>
                     </li>
                     <li>
                         <div style="background-image: url(./img/sec1_book6.webp);">
                             <div>
-                                <img src="./img/sec1_10sale_1.webp" alt="">
-                                <img src="./img/sec1_10sale_2.webp" alt="">
-                                <img src="./img/sec1_10sale_3.webp" alt="">
-                                <img src="./img/sec1_10sale_4.webp" alt="">
-                                <img src="./img/sec1_10sale_5.webp" alt="">
-                            </div>
-                            <div>
-                                <img src="./img/sec1_select.webp" alt="">
+                                <div class="sale">
+                                    <img src="./img/sec1_10sale.webp" alt="">
+                                </div>
+                                <div class="select">
+                                    <img src="./img/sec1_select.webp" alt="">
+                                </div>
                             </div>
                         </div>
                         <p>이혜영 주연 영화<br>
-                        &lt;파과&gt;원작 소설</p>
+                            &lt;파과&gt;원작 소설</p>
                     </li>
                     <li>
                         <div style="background-image: url(./img/sec1_book7.webp);"></div>
                         <p>수치심에 관한<br>
-                        아주 사적인 연구</p>
+                            아주 사적인 연구</p>
                     </li>
                 </ul>
 
@@ -530,7 +533,223 @@
                 <span class="next"><i class="fa-solid fa-chevron-right"></i></span>
             </div>
         </div>
-     </section>
+    </section>
+
+
+
+
+
+
+
+    <!-- section2 -->
+    <section id="sec2">
+        <div>
+            <div class="section_title">
+                <h2>지금 많이 읽고 있는 작품</h2>
+            </div>
+            <div class="books">
+                <div class="books_wrap">
+                    <div>
+                        <ul>
+                            <li>
+                                <ol>
+                                    <li class="book_detail">
+                                        
+                                    </li>
+                                    <li class="book_detail">
+                                        
+                                    </li>
+                                    <li class="book_detail">
+                                        
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <ol>
+                                    <li class="book_detail">
+                                        
+                                    </li>
+                                    <li class="book_detail">
+                                        
+                                    </li>
+                                    <li class="book_detail">
+                                        
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <ol>
+                                    <li class="book_detail">
+                                        
+                                    </li>
+                                    <li class="book_detail">
+                                        
+                                    </li>
+                                    <li class="book_detail">
+                                        
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <ol>
+                                    <li class="book_detail">
+                                        
+                                    </li>
+                                    <li class="book_detail">
+                                        
+                                    </li>
+                                    <li class="book_detail">
+                                        
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <ol>
+                                    <li class="book_detail">
+                                        
+                                    </li>
+                                    <li class="book_detail">
+                                        
+                                    </li>
+                                    <li class="book_detail">
+                                        
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <ol>
+                                    <li class="book_detail">
+                                        
+                                    </li>
+                                    <li class="book_detail">
+                                        
+                                    </li>
+                                    <li class="book_detail">
+                                        
+                                    </li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <span class="prev"><i class="fa-solid fa-chevron-left"></i></span>
+                <span class="next"><i class="fa-solid fa-chevron-right"></i></span>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- section3 -->
+
+
+
+
+
+
+
+    <!-- section4 -->
+     <section id="sec4">
+        <div>
+            <div class="section_title">
+                <h2>베스트</h2>
+            </div>
+            <div class="books">
+                <div class="books_wrap">
+                    <div>
+                        <ul>
+                            <li>
+                                <ol>
+                                    <li class="book_detail">
+                                        
+                                    </li>
+                                    <li class="book_detail">
+                                        
+                                    </li>
+                                    <li class="book_detail">
+                                        
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <ol>
+                                    <li class="book_detail">
+                                        
+                                    </li>
+                                    <li class="book_detail">
+                                        
+                                    </li>
+                                    <li class="book_detail">
+                                        
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <ol>
+                                    <li class="book_detail">
+                                        
+                                    </li>
+                                    <li class="book_detail">
+                                        
+                                    </li>
+                                    <li class="book_detail">
+                                        
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <ol>
+                                    <li class="book_detail">
+                                        
+                                    </li>
+                                    <li class="book_detail">
+                                        
+                                    </li>
+                                    <li class="book_detail">
+                                        
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <ol>
+                                    <li class="book_detail">
+                                        
+                                    </li>
+                                    <li class="book_detail">
+                                        
+                                    </li>
+                                    <li class="book_detail">
+                                        
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <ol>
+                                    <li class="book_detail">
+                                        
+                                    </li>
+                                    <li class="book_detail">
+                                        
+                                    </li>
+                                    <li class="book_detail">
+                                        
+                                    </li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <span class="prev"><i class="fa-solid fa-chevron-left"></i></span>
+                <span class="next"><i class="fa-solid fa-chevron-right"></i></span>
+            </div>
+        </div>
+    </section>
 
 
 

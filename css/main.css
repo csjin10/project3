@@ -341,13 +341,18 @@ header > div img {
   font-weight: 450;
 }
 
+#sec1 {
+  padding-top: 35px;
+}
 #sec1 > div {
   width: 1170px;
   margin: 0 auto;
   padding: 0 30px;
+  position: relative;
 }
 #sec1 > div h2 {
   font-size: 22px;
+  padding: 0 0 20px 3px;
 }
 #sec1 .sec1_slider {
   overflow: hidden;
@@ -357,15 +362,277 @@ header > div img {
   width: 1400px;
 }
 #sec1 .sec1_slider li {
-  width: 180px;
+  width: 179px;
   margin: 0 3px;
+}
+#sec1 .sec1_slider li > div {
+  height: 260px;
+  border: 1px solid #eee;
+  border-radius: 5px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+  overflow: hidden;
 }
-#sec1 .sec1_slider li > div {
-  height: 261px;
+#sec1 .sec1_slider li > div p {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  padding: 7px 0;
+  position: absolute;
+  top: 80%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 179px;
+}
+#sec1 .sec1_slider li > div > div {
+  display: flex;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transform: translateY(-84%);
+  border-top-right-radius: 5px;
+  overflow: hidden;
+}
+#sec1 .sec1_slider li > div .rent {
+  width: 28px;
+}
+#sec1 .sec1_slider li > div .rent img {
+  width: 100%;
+  background-color: grey;
+}
+#sec1 .sec1_slider li > div .sale {
+  width: 28px;
+}
+#sec1 .sec1_slider li > div .sale img {
+  width: 100%;
+  background-color: rgb(231, 44, 44);
+}
+#sec1 .sec1_slider li > div .select {
+  width: 28px;
+}
+#sec1 .sec1_slider li > div .select img {
+  width: 100%;
+  background-color: darkkhaki;
+}
+#sec1 .sec1_slider li > p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  padding-top: 8px;
+}
+#sec1 .sec1_slider > span {
+  position: relative;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fff;
+  display: block;
+  border: 1px solid #eee;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0px 0px 1px 0px #eee;
+}
+#sec1 .sec1_slider > span i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  opacity: 0.9;
+}
+#sec1 .sec1_slider .prev {
+  left: 15px;
+}
+#sec1 .sec1_slider .next {
+  right: 15px;
+}
+
+#sec2 {
+  width: 100%;
+}
+#sec2 > div {
+  width: 1170px;
+  margin: 0 auto;
+}
+#sec2 .section_title {
+  padding: 35px 30px 17px 30px;
+}
+#sec2 .section_title h2 {
+  font-size: 22px;
+  padding: 0 3px;
+}
+#sec2 .books {
+  width: 100%;
+  padding: 0 30px;
+  position: relative;
+}
+#sec2 .books .books_wrap {
+  width: 100%;
+  padding: 0 3px;
+  overflow: hidden;
+}
+#sec2 .books .books_wrap > div {
+  width: 2223px;
+}
+#sec2 .books ul {
+  display: flex;
+}
+#sec2 .books ul li {
+  width: 16.6%;
+}
+#sec2 .books ol .book_detail {
+  width: 100%;
+  margin: 5px 0;
+  display: flex;
+}
+#sec2 .books ol .book_detail img {
+  width: 85px;
   border-radius: 5px;
+  border: 1px solid #eee;
+}
+#sec2 .books ol .book_detail h3 {
+  width: 85px;
+  height: 123.25px;
+  line-height: 115px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 17.5px;
+}
+#sec2 .books ol .book_detail div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#sec2 .books ol .book_detail div h4 {
+  font-weight: 500;
+}
+#sec2 .books ol .book_detail div h5 {
+  font-size: 14.5px;
+  font-weight: 400;
+  opacity: 0.8;
+}
+#sec2 .books > span {
+  position: relative;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fff;
+  display: block;
+  border: 1px solid #eee;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0px 0px 1px 0px #eee;
+}
+#sec2 .books > span i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  opacity: 0.9;
+}
+#sec2 .books .prev {
+  left: 15px;
+}
+#sec2 .books .next {
+  right: 15px;
+}
+
+#sec4 {
+  width: 100%;
+}
+#sec4 > div {
+  width: 1170px;
+  margin: 0 auto;
+}
+#sec4 .section_title {
+  padding: 35px 30px 17px 30px;
+}
+#sec4 .section_title h2 {
+  font-size: 22px;
+  padding: 0 3px;
+}
+#sec4 .books {
+  width: 100%;
+  padding: 0 30px;
+  position: relative;
+}
+#sec4 .books .books_wrap {
+  width: 100%;
+  padding: 0 3px;
+  overflow: hidden;
+}
+#sec4 .books .books_wrap > div {
+  width: 2223px;
+}
+#sec4 .books ul {
+  display: flex;
+}
+#sec4 .books ul li {
+  width: 16.6%;
+}
+#sec4 .books ol .book_detail {
+  width: 100%;
+  margin: 5px 0;
+  display: flex;
+}
+#sec4 .books ol .book_detail img {
+  width: 85px;
+  border-radius: 5px;
+  border: 1px solid #eee;
+}
+#sec4 .books ol .book_detail h3 {
+  width: 85px;
+  height: 123.25px;
+  line-height: 115px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 17.5px;
+}
+#sec4 .books ol .book_detail div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#sec4 .books ol .book_detail div h4 {
+  font-weight: 500;
+}
+#sec4 .books ol .book_detail div h5 {
+  font-size: 14.5px;
+  font-weight: 400;
+  opacity: 0.8;
+}
+#sec4 .books > span {
+  position: relative;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fff;
+  display: block;
+  border: 1px solid #eee;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0px 0px 1px 0px #eee;
+}
+#sec4 .books > span i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  opacity: 0.9;
+}
+#sec4 .books .prev {
+  left: 15px;
+}
+#sec4 .books .next {
+  right: 15px;
 }
 
 footer {
