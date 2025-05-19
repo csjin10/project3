@@ -10,8 +10,7 @@
 
     <link rel="stylesheet" href="./css/main.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="./js/main.js"></script>
+    
 
 </head>
 
@@ -86,7 +85,7 @@
                 <div style="background-image: url(./img/slider_img07.webp);"></div>
                 <div style="background-image: url(./img/slider_img08.webp);"></div>
                 <div style="background-image: url(./img/slider_img09.webp);"></div>
-                <div style="background-image: url(./img/slider_img010.webp);"></div>
+                <div style="background-image: url(./img/slider_img10.webp);"></div>
                 <div style="background-image: url(./img/slider_img11.webp);"></div>
                 <div style="background-image: url(./img/slider_img12.webp);"></div>
                 <div style="background-image: url(./img/slider_img13.webp);"></div>
@@ -451,29 +450,29 @@
             <h2>오늘, 리디의 발견</h2>
             <div class="sec1_slider">
                 <ul>
-                    <li>
-                        <div style="background-image: url(./img/sec1_book1.webp);">
+                    <li class="book_inf">
+                        <div class="book_img">
                             <p>11권 세트</p>
                             <div>
-                                <div class="rent"><img src="./img/sec1_rent.webp" alt=""></div>
+                                <div class="rent">
+                                    <img src="./img/sec1_rent.webp" alt="">
+                                </div>
                             </div>
                         </div>
-                        <p>지도로 읽는다<br>
-                            세트100% 포백</p>
+                        
                     </li>
-                    <li>
-                        <div style="background-image: url(./img/sec1_book2.webp);">
+                    <li class="book_inf">
+                        <div class="book_img">
                             <div>
                                 <div class="sale">
                                     <img src="./img/sec1_10sale.webp" alt="">
                                 </div>
                             </div>
                         </div>
-                        <p>유시민의 이정표<br>
-                            15권의 고전</p>
+                        
                     </li>
-                    <li>
-                        <div style="background-image: url(./img/sec1_book3.webp);">
+                    <li class="book_inf">
+                        <div class="book_img">
                             <div>
                                 <div class="sale">
                                     <img src="./img/sec1_10sale.webp" alt="">
@@ -483,33 +482,30 @@
                                 </div>
                             </div>
                         </div>
-                        <p>법의 체면이란?<br>
-                            도진기 신작소설집</p>
+                        
                     </li>
-                    <li>
-                        <div style="background-image: url(./img/sec1_book4.webp);">
+                    <li class="book_inf">
+                        <div class="book_img">
                             <div>
                                 <div class="select">
                                     <img src="./img/sec1_select.webp" alt="">
                                 </div>
                             </div>
                         </div>
-                        <p>워너브라더스<br>
-                            영화로 탄생 예정</p>
+                        
                     </li>
-                    <li>
-                        <div style="background-image: url(./img/sec1_book5.webp);">
+                    <li class="book_inf">
+                        <div class="book_img">
                             <div>
                                 <div class="select">
                                     <img src="./img/sec1_select.webp" alt="">
                                 </div>
                             </div>
                         </div>
-                        <p>동명의 드라마<br>
-                            6월 공개!</p>
+                        
                     </li>
-                    <li>
-                        <div style="background-image: url(./img/sec1_book6.webp);">
+                    <li class="book_inf">
+                        <div class="book_img">
                             <div>
                                 <div class="sale">
                                     <img src="./img/sec1_10sale.webp" alt="">
@@ -519,13 +515,11 @@
                                 </div>
                             </div>
                         </div>
-                        <p>이혜영 주연 영화<br>
-                            &lt;파과&gt;원작 소설</p>
+                        
                     </li>
-                    <li>
-                        <div style="background-image: url(./img/sec1_book7.webp);"></div>
-                        <p>수치심에 관한<br>
-                            아주 사적인 연구</p>
+                    <li class="book_inf">
+                        <div class="book_img"></div>
+                        
                     </li>
                 </ul>
 
@@ -646,6 +640,48 @@
 
 
     <!-- section3 -->
+     <section id="sec3">
+        <div>
+            <div class="section_title">
+                <h2>MD's Pick</h2>
+            </div>
+            <div class="books">
+                <div class="books_wrap">
+                    <div>
+                        <ul>
+                            <li>
+                                <div class="books_Img img1">
+                                    <div></div>
+                                </div>
+                                <div class="books_text"></div>
+                            </li>
+                            <li>
+                                <div class="books_Img img2">
+                                    <div></div>
+                                </div>
+                                <div class="books_text"></div>
+                            </li>
+                            <li>
+                                <div class="books_Img img3">
+                                    <div></div>
+                                </div>
+                                <div class="books_text"></div>
+                            </li>
+                            <li>
+                                <div class="books_Img img4">
+                                    <div></div>
+                                </div>
+                                <div class="books_text"></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <span class="prev"><i class="fa-solid fa-chevron-left"></i></span>
+                <span class="next"><i class="fa-solid fa-chevron-right"></i></span>
+            </div>
+        </div>
+     </section>
 
 
 
@@ -810,7 +846,8 @@
         </div>
     </footer>
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
