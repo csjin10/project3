@@ -231,50 +231,50 @@ header > div img {
   flex-basis: 0px;
   display: none;
 }
-#slider_wrap > div #slider_text_box {
+#slider_wrap > div .slider_text_box {
   width: 1010px;
   height: 400px;
   margin-top: -400px;
   margin-left: 33px;
   position: relative;
 }
-#slider_wrap > div #slider_text_box .slider_text {
+#slider_wrap > div .slider_text_box .slider_text {
   position: absolute;
   top: 0;
   left: 0;
   padding: 270px 0 0 40px;
-  width: 1010px;
-  height: 400px;
+  width: 100%;
+  height: 100%;
   cursor: pointer;
 }
-#slider_wrap > div #slider_text_box .slider_text table {
+#slider_wrap > div .slider_text_box .slider_text table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-#slider_wrap > div #slider_text_box .slider_text td {
+#slider_wrap > div .slider_text_box .slider_text td {
   border: 1px solid #fff;
   line-height: 15px;
   height: 15px;
   border-radius: 10px;
 }
-#slider_wrap > div #slider_text_box .slider_text img {
+#slider_wrap > div .slider_text_box .slider_text img {
   height: 20px;
 }
-#slider_wrap > div #slider_text_box .slider_text h1 {
+#slider_wrap > div .slider_text_box .slider_text h1 {
   color: #fff;
   line-height: 40px;
   letter-spacing: -0.02px;
 }
-#slider_wrap > div #slider_text_box .slider_text > div {
+#slider_wrap > div .slider_text_box .slider_text > div {
   display: flex;
   justify-content: space-between;
 }
-#slider_wrap > div #slider_text_box .slider_text > div p {
+#slider_wrap > div .slider_text_box .slider_text > div p {
   color: #fff;
   opacity: 0.9;
   font-weight: 500;
 }
-#slider_wrap > div #slider_text_box .slider_text > div div {
+#slider_wrap > div .slider_text_box .slider_text > div div {
   margin-right: 40px;
   background-color: rgba(0, 0, 0, 0.2);
   color: rgba(255, 255, 255, 0.4);
@@ -283,13 +283,13 @@ header > div img {
   padding: 0 9px;
   border-radius: 100px;
 }
-#slider_wrap > div #slider_text_box .slider_text > div div span {
+#slider_wrap > div .slider_text_box .slider_text > div div span {
   color: #fff;
 }
-#slider_wrap > div #slider_text_box .box1 {
+#slider_wrap > div .slider_text_box .box1 {
   display: block;
 }
-#slider_wrap > div #slider_text_box .slider_text:not(:nth-of-type(1)) {
+#slider_wrap > div .slider_text_box .slider_text:not(:nth-of-type(1)) {
   display: none;
 }
 #slider_wrap > div > span {
@@ -343,6 +343,7 @@ header > div img {
 
 #sec1 {
   padding-top: 35px;
+  padding-bottom: 5px;
 }
 #sec1 > div {
   width: 1170px;
@@ -350,9 +351,18 @@ header > div img {
   padding: 0 30px;
   position: relative;
 }
-#sec1 > div h2 {
+#sec1 .section_title {
+  padding: 0 3px 20px 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#sec1 .section_title h2 {
   font-size: 22px;
-  padding: 0 0 20px 3px;
+}
+#sec1 .section_title h4 {
+  opacity: 0.4;
+  cursor: pointer;
 }
 #sec1 .sec1_slider {
   overflow: hidden;
@@ -365,7 +375,7 @@ header > div img {
   width: 179px;
   margin: 0 3px;
 }
-#sec1 .sec1_slider .book_inf > .book_img {
+#sec1 .sec1_slider .book_inf > a > .book_img {
   height: 260px;
   border: 1px solid #eee;
   border-radius: 5px;
@@ -375,22 +385,10 @@ header > div img {
   position: relative;
   overflow: hidden;
 }
-#sec1 .sec1_slider .book_inf > .book_img img {
+#sec1 .sec1_slider .book_inf > a > .book_img img {
   width: 100%;
 }
-#sec1 .sec1_slider .book_inf > .book_img p {
-  background-color: rgba(255, 255, 255, 0.8);
-  font-size: 12px;
-  font-weight: 600;
-  text-align: center;
-  padding: 7px 0;
-  position: absolute;
-  top: 80%;
-  left: 0;
-  transform: translateY(-50%);
-  width: 179px;
-}
-#sec1 .sec1_slider .book_inf > .book_img > div {
+#sec1 .sec1_slider .book_inf > a > .book_img > div {
   display: flex;
   position: absolute;
   top: 100%;
@@ -399,32 +397,45 @@ header > div img {
   border-top-right-radius: 5px;
   overflow: hidden;
 }
-#sec1 .sec1_slider .book_inf > .book_img .rent {
+#sec1 .sec1_slider .book_inf > a > .book_img .rent {
   width: 28px;
 }
-#sec1 .sec1_slider .book_inf > .book_img .rent img {
+#sec1 .sec1_slider .book_inf > a > .book_img .rent img {
   width: 100%;
   background-color: grey;
 }
-#sec1 .sec1_slider .book_inf > .book_img .sale {
+#sec1 .sec1_slider .book_inf > a > .book_img .sale {
   width: 28px;
 }
-#sec1 .sec1_slider .book_inf > .book_img .sale img {
+#sec1 .sec1_slider .book_inf > a > .book_img .sale img {
   width: 100%;
   background-color: rgb(231, 44, 44);
 }
-#sec1 .sec1_slider .book_inf > .book_img .select {
+#sec1 .sec1_slider .book_inf > a > .book_img .select {
   width: 28px;
 }
-#sec1 .sec1_slider .book_inf > .book_img .select img {
+#sec1 .sec1_slider .book_inf > a > .book_img .select img {
   width: 100%;
   background-color: darkkhaki;
 }
-#sec1 .sec1_slider .book_inf > p {
-  font-size: 16px;
-  font-weight: 500;
+#sec1 .sec1_slider .book_inf > div {
   line-height: 20px;
   padding-top: 8px;
+}
+#sec1 .sec1_slider .book_inf > div h4 {
+  font-weight: 500;
+  width: 165px;
+  word-break: keep-all;
+  overflow: hidden;
+  display: inline-block;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+#sec1 .sec1_slider .book_inf > div p {
+  font-size: 14px;
+  opacity: 0.6;
+  padding-top: 2px;
 }
 #sec1 .sec1_slider > span {
   position: relative;
@@ -457,17 +468,24 @@ header > div img {
 
 #sec2 {
   width: 100%;
+  padding-bottom: 5px;
 }
 #sec2 > div {
   width: 1170px;
   margin: 0 auto;
 }
 #sec2 .section_title {
-  padding: 35px 30px 17px 30px;
+  padding: 35px 33px 17px 33px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 #sec2 .section_title h2 {
   font-size: 22px;
-  padding: 0 3px;
+}
+#sec2 .section_title h4 {
+  opacity: 0.4;
+  cursor: pointer;
 }
 #sec2 .books {
   width: 100%;
@@ -518,11 +536,16 @@ header > div img {
   width: 100%;
   text-overflow: ellipsis;
   white-space: nowrap;
+  cursor: pointer;
 }
 #sec2 .books ol .book_detail div h5 {
   font-size: 14.5px;
   font-weight: 400;
   opacity: 0.8;
+  cursor: pointer;
+}
+#sec2 .books ol .book_detail div h5:hover {
+  opacity: 0.4;
 }
 #sec2 .books > span {
   position: relative;
@@ -555,6 +578,7 @@ header > div img {
 
 #sec3 {
   width: 100%;
+  padding-bottom: 5px;
 }
 #sec3 > div {
   width: 1170px;
@@ -665,17 +689,24 @@ header > div img {
 
 #sec4 {
   width: 100%;
+  padding-bottom: 5px;
 }
 #sec4 > div {
   width: 1170px;
   margin: 0 auto;
 }
 #sec4 .section_title {
-  padding: 35px 30px 17px 30px;
+  padding: 35px 33px 17px 33px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 #sec4 .section_title h2 {
   font-size: 22px;
-  padding: 0 3px;
+}
+#sec4 .section_title h4 {
+  opacity: 0.4;
+  cursor: pointer;
 }
 #sec4 .books {
   width: 100%;
@@ -726,11 +757,16 @@ header > div img {
   width: 100%;
   text-overflow: ellipsis;
   white-space: nowrap;
+  cursor: pointer;
 }
 #sec4 .books ol .book_detail div h5 {
   font-size: 14.5px;
   font-weight: 400;
   opacity: 0.8;
+  cursor: pointer;
+}
+#sec4 .books ol .book_detail div h5:hover {
+  opacity: 0.4;
 }
 #sec4 .books > span {
   position: relative;
@@ -757,6 +793,256 @@ header > div img {
   display: none;
 }
 #sec4 .books .next {
+  right: 15px;
+  display: block;
+}
+
+#sec5 {
+  padding-top: 35px;
+  padding-bottom: 5px;
+}
+#sec5 > div {
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0 30px;
+  position: relative;
+}
+#sec5 .section_title {
+  padding: 0 3px 20px 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#sec5 .section_title h2 {
+  font-size: 22px;
+}
+#sec5 .section_title h4 {
+  opacity: 0.4;
+  cursor: pointer;
+}
+#sec5 .sec1_slider {
+  overflow: hidden;
+}
+#sec5 .sec1_slider ul {
+  display: flex;
+  width: 1400px;
+}
+#sec5 .sec1_slider .book_inf {
+  width: 179px;
+  margin: 0 3px;
+}
+#sec5 .sec1_slider .book_inf > a > .book_img {
+  height: 260px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+#sec5 .sec1_slider .book_inf > a > .book_img img {
+  width: 100%;
+}
+#sec5 .sec1_slider .book_inf > a > .book_img > div {
+  display: flex;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transform: translateY(-84%);
+  border-top-right-radius: 5px;
+  overflow: hidden;
+}
+#sec5 .sec1_slider .book_inf > a > .book_img .rent {
+  width: 28px;
+}
+#sec5 .sec1_slider .book_inf > a > .book_img .rent img {
+  width: 100%;
+  background-color: grey;
+}
+#sec5 .sec1_slider .book_inf > a > .book_img .sale {
+  width: 28px;
+}
+#sec5 .sec1_slider .book_inf > a > .book_img .sale img {
+  width: 100%;
+  background-color: rgb(231, 44, 44);
+}
+#sec5 .sec1_slider .book_inf > a > .book_img .select {
+  width: 28px;
+}
+#sec5 .sec1_slider .book_inf > a > .book_img .select img {
+  width: 100%;
+  background-color: darkkhaki;
+}
+#sec5 .sec1_slider .book_inf > div {
+  line-height: 20px;
+  padding-top: 8px;
+}
+#sec5 .sec1_slider .book_inf > div h4 {
+  font-weight: 500;
+  width: 165px;
+  word-break: keep-all;
+  overflow: hidden;
+  display: inline-block;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+#sec5 .sec1_slider .book_inf > div p {
+  font-size: 14px;
+  opacity: 0.6;
+  padding-top: 2px;
+}
+#sec5 .sec1_slider > span {
+  position: relative;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0px 0px 1px 0px #eee;
+}
+#sec5 .sec1_slider > span i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  opacity: 0.9;
+}
+#sec5 .sec1_slider .prev {
+  left: 15px;
+  display: none;
+}
+#sec5 .sec1_slider .next {
+  right: 15px;
+  display: block;
+}
+
+#sec6 {
+  padding-top: 35px;
+  padding-bottom: 5px;
+}
+#sec6 > div {
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0 30px;
+  position: relative;
+}
+#sec6 .section_title {
+  padding: 0 3px 20px 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#sec6 .section_title h2 {
+  font-size: 22px;
+}
+#sec6 .section_title h4 {
+  opacity: 0.4;
+  cursor: pointer;
+}
+#sec6 .sec1_slider {
+  overflow: hidden;
+}
+#sec6 .sec1_slider ul {
+  display: flex;
+  width: 1400px;
+}
+#sec6 .sec1_slider .book_inf {
+  width: 179px;
+  margin: 0 3px;
+}
+#sec6 .sec1_slider .book_inf > a > .book_img {
+  height: 260px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+#sec6 .sec1_slider .book_inf > a > .book_img img {
+  width: 100%;
+}
+#sec6 .sec1_slider .book_inf > a > .book_img > div {
+  display: flex;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transform: translateY(-84%);
+  border-top-right-radius: 5px;
+  overflow: hidden;
+}
+#sec6 .sec1_slider .book_inf > a > .book_img .rent {
+  width: 28px;
+}
+#sec6 .sec1_slider .book_inf > a > .book_img .rent img {
+  width: 100%;
+  background-color: grey;
+}
+#sec6 .sec1_slider .book_inf > a > .book_img .sale {
+  width: 28px;
+}
+#sec6 .sec1_slider .book_inf > a > .book_img .sale img {
+  width: 100%;
+  background-color: rgb(231, 44, 44);
+}
+#sec6 .sec1_slider .book_inf > a > .book_img .select {
+  width: 28px;
+}
+#sec6 .sec1_slider .book_inf > a > .book_img .select img {
+  width: 100%;
+  background-color: darkkhaki;
+}
+#sec6 .sec1_slider .book_inf > div {
+  line-height: 20px;
+  padding-top: 8px;
+}
+#sec6 .sec1_slider .book_inf > div h4 {
+  font-weight: 500;
+  width: 165px;
+  word-break: keep-all;
+  overflow: hidden;
+  display: inline-block;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+#sec6 .sec1_slider .book_inf > div p {
+  font-size: 14px;
+  opacity: 0.6;
+  padding-top: 2px;
+}
+#sec6 .sec1_slider > span {
+  position: relative;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0px 0px 1px 0px #eee;
+}
+#sec6 .sec1_slider > span i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  opacity: 0.9;
+}
+#sec6 .sec1_slider .prev {
+  left: 15px;
+  display: none;
+}
+#sec6 .sec1_slider .next {
   right: 15px;
   display: block;
 }
