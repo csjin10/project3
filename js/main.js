@@ -25,7 +25,7 @@ async function fetchBooks(query) {
 
 async function bookData() {
     try {
-        const querys = ['역사', '에세이', '소설', '로맨스판타지', '이', '바다'];
+        const querys = ['역사', '에세이', '소설', '로맨스판타지', '이', '바다', '숲', '캘린더'];
 
         querys.forEach(async (query, i) => {
             const data = await fetchBooks(query);
@@ -84,8 +84,40 @@ bookData();
 
 
 
+// header
+$(function(){
+    $('.left_area > a').click(function(){
+        $(this).addClass('header_click').siblings().removeClass('header_click');
+    });
+});
+
+
+
+
+
+
+
+
+
+
+// area
+$(function(){
+    $('#area li').click(function(){        
+        $(this).addClass('area_click').siblings().removeClass('area_click');
+    });
+});
+
+
+
+
+
+
+
+
+
+
 // slider
-function prev(){
+/* function prev(){
     $("#slider> div:last").prependTo("#slider").css({"flex-grow":0,"flex-basis":"41px"});
     $("#slider> div:first").stop().animate({"flex-grow":1,"flex-basis":"0px"},800);
     $("#slider> div:nth-of-type(3)").stop().animate({"flex-grow":0,"flex-basis":"41px"},800);
@@ -96,6 +128,25 @@ function next(){
     $("#slider> div:first").stop().animate({"flex-grow":0,"flex-basis":"0px"},800);
     // $("#slider> div:nth-of-type(4)").animate({"flex-grow":0,"flex-basis":"41px"},800);
     $("#slider> div:nth-of-type(2)").animate({"flex-grow":1,"flex-basis":"0px"},800,function(){
+        $("#slider> div:first").appendTo("#slider");
+    });
+} */
+
+
+
+
+
+function prev(){
+    $("#slider> div:last").prependTo("#slider").css({"flex-grow":0,"flex-basis":"41px"});
+    $("#slider> div:first").stop().animate({"flex-grow":1,"flex-basis":"0px"},800);
+    $("#slider> div:nth-of-type(3)").stop().animate({"flex-grow":0,"flex-basis":"41px"},800);
+    $("#slider> div:nth-of-type(2)").stop().animate({"flex-grow":0,"flex-basis":"41px"},800);
+}
+
+function next(){
+    $("#slider> div:first").stop().animate({"width":"0px"},800);
+    $("#slider> div:nth-of-type(3)").animate({"width":"41px"},800);
+    $("#slider> div:nth-of-type(2)").animate({"width":"1010px"},800,function(){
         $("#slider> div:first").appendTo("#slider");
     });
 }
@@ -113,7 +164,7 @@ $("#slider_wrap .next").click(function(){
 
 
 
-// slider text
+
 
 
 
@@ -226,5 +277,43 @@ $("#sec6 .next").click(function(){
         $('#sec6 .sec1_slider> ul').css({"margin-left":-185});
         $("#sec6 .prev").css({"display":"block"});
         $("#sec6 .next").css({"display":"none"});
+    });    
+});
+
+
+
+// slider sec7
+$("#sec7 .prev").click(function(){
+    $('#sec7 .books_wrap>div').css({"margin-left":-368});
+    $('#sec7 .books_wrap>div').stop().animate({"margin-left":0},400,function(){
+        $("#sec7 .prev").css({"display":"none"});
+        $("#sec7 .next").css({"display":"block"});
+    });    
+});
+
+$("#sec7 .next").click(function(){
+    $("#sec7 .books_wrap>div").stop().animate({"margin-left":-368},400,function(){
+        $('#sec7 .books_wrap>div').css({"margin-left":-368});
+        $("#sec7 .prev").css({"display":"block"});
+        $("#sec7 .next").css({"display":"none"});
+    });    
+});
+
+
+
+// slider sec8
+$("#sec8 .prev").click(function(){
+    $('#sec8 .books_wrap>div').css({"margin-left":-368});
+    $('#sec8 .books_wrap>div').stop().animate({"margin-left":0},400,function(){
+        $("#sec8 .prev").css({"display":"none"});
+        $("#sec8 .next").css({"display":"block"});
+    });    
+});
+
+$("#sec8 .next").click(function(){
+    $("#sec8 .books_wrap>div").stop().animate({"margin-left":-368},400,function(){
+        $('#sec8 .books_wrap>div').css({"margin-left":-368});
+        $("#sec8 .prev").css({"display":"block"});
+        $("#sec8 .next").css({"display":"none"});
     });    
 });
