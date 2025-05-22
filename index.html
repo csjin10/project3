@@ -2,50 +2,443 @@
 <html lang="ko">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>리디북스</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>도서 전자책 - 리디</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-    <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/main.css">
 
-    
+
 
 </head>
 
 <body>
 
-    <!-- header -->
-    <header>
-        <nav>
-            <a href="./index.html"><img src="img/logo_ridi.svg" alt="logo"></a>
-            <div>
-                <form>
-                    <i class="fa-solid fa-magnifying-glass" id="mgf_glass"></i>
-                    <input type="search">
-                </form>
-                <a href="#">회원가입</a>
-                <p>&dot;</p>
-                <a href="#">로그인</a>
+  <!-- header -->
+  <header>
+    <nav>
+      <a href="./index.html"><img src="img/logo_ridi.svg" alt="logo"></a>
+      <div>
+        <form>
+          <i class="fa-solid fa-magnifying-glass" id="mgf_glass"></i>
+          <input type="search">
+        </form>
+        <a href="#">회원가입</a>
+        <p>&dot;</p>
+        <a href="#">로그인</a>
+      </div>
+    </nav>
+    <div>
+      <div class="left_area">
+        <a href="#">웹툰</a>
+        <a href="#">만화</a>
+        <a href="#">웹소설</a>
+        <a href="#" class="header_click">도서</a>
+        <a href="#">셀렉트<i class="fa-solid fa-up-right-from-square"></i></a>
+      </div>
+      <div class="right_area">
+        <a href="#"><i class="fa-solid fa-bars"></i>
+          전체 카테고리</a>
+        <a href="#"><img src="img/cash.svg" alt="cash">
+          캐시충전</a>
+      </div>
+    </div>
+  </header>
+
+
+
+
+
+
+
+  <!-- area -->
+  <div id="area">
+    <ul>
+      <li class="area_click"><a href="#">추천</a></li>
+      <li><a href="#">기획전</a></li>
+      <li><a href="#">소설</a></li>
+      <li><a href="#">인문/사회/역사</a></li>
+      <li><a href="#">경영/경제</a></li>
+      <li><a href="#">자기계발</a></li>
+      <li><a href="#">에세이/시</a></li>
+    </ul>
+  </div>
+
+
+
+
+
+
+
+  <!-- slider -->
+  <div id="slider_wrap">
+    <div>
+      <div id="slider">
+        <div style="background-image: url(./img/slider_img01.webp);">
+          <div class="slider_text_box">
+            <div class="slider_text box1">
+              <table>
+                <tr>
+                  <td><img src="./img/slider_text_Ronly.webp" alt="R only"></td>
+                </tr>
+              </table>
+              <h1>십오야 쿠폰&포인트 100% 드림</h1>
+              <div>
+                <p>이벤트 응모하고 보너스 포인트도 받아가세요!</p>
+                <div><span>1</span>/20</div>
+              </div>
             </div>
-        </nav>
-        <div>
-            <div class="left_area">
-                <a href="#">웹툰</a>
-                <a href="#">만화</a>
-                <a href="#">웹소설</a>
-                <a href="#" class="header_click">도서</a>
-                <a href="#">셀렉트<i class="fa-solid fa-up-right-from-square"></i></a>
-            </div>
-            <div class="right_area">
-                <a href="#"><i class="fa-solid fa-bars"></i>
-                    전체 카테고리</a>
-                <a href="#"><img src="img/cash.svg" alt="cash">
-                    캐시충전</a>
-            </div>
+          </div>
         </div>
-    </header>
+        <div style="background-image: url(./img/slider_img02.webp);">
+          <div class="slider_text_box">
+            <div class="slider_text box2">
+              <table>
+                <tr>
+                  <td><img src="./img/slider_text_50sale.webp" alt="50%할인"></td>
+                  <td><img src="./img/slider_text_rent.webp" alt="대여"></td>
+                </tr>
+              </table>
+              <h1>반값으로 1년 동안!<br>
+                십오야 X 365일 대여전</h1>
+              <div>
+                <p>1권만 대여해도 셀렉트 이용권 전원 증정!</p>
+                <div><span>2</span>/20</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="background-image: url(./img/slider_img03.webp);">
+          <div class="slider_text_box">
+            <div class="slider_text box3">
+              <table>
+                <tr>
+                  <td><img src="./img/slider_text_set.webp" alt="세트"></td>
+                  <td><img src="./img/slider_text_rent.webp" alt="대여"></td>
+                </tr>
+              </table>
+              <h1>&lt;레이코 형사 시리즈&gt;<br>
+                세트 특가 50년 대여</h1>
+              <div>
+                <p>1주 한정! 얼리버드 1,000P포인트백</p>
+                <div><span>3</span>/20</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="background-image: url(./img/slider_img04.webp);">
+          <div class="slider_text_box">
+            <div class="slider_text box4">
+              <table>
+                <tr>
+                  <td><img src="./img/slider_text_Ronly.webp" alt="R only"></td>
+                  <td><img src="./img/slider_text_select.webp" alt="셀렉트"></td>
+                </tr>
+              </table>
+              <h1>&lt;너의 췌장을 먹고 싶어&gt;<br>
+                스미노 요루 신작</h1>
+              <div>
+                <p>단독 선 출간 + 5% 포인트백 (~5/27)</p>
+                <div><span>4</span>/20</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="background-image: url(./img/slider_img05.webp);">
+          <div class="slider_text_box">
+            <div class="slider_text box5">
+              <table>
+                <tr>
+                  <td><img src="./img/slider_text_new.webp" alt="new"></td>
+                  <td><img src="./img/slider_text_10sale.webp" alt="10%할인"></td>
+                </tr>
+              </table>
+              <h1>유시민 &lt;청춘의 독서&gt;<br>
+                특별증보판 출간!</h1>
+              <div>
+                <p>인문서 기획전 선착순 대여 20%추가 할인</p>
+                <div><span>5</span>/20</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="background-image: url(./img/slider_img06.webp);">
+          <div class="slider_text_box">
+            <div class="slider_text box6">
+              <table>
+                <tr>
+                  <td><img src="./img/slider_text_set.webp" alt="세트"></td>
+                  <td><img src="./img/slider_text_rent.webp" alt="대여"></td>
+                </tr>
+              </table>
+              <h1>&lt;지도로 읽는다 시리즈&gt;<br>
+                세트 100% 포인트백</h1>
+              <div>
+                <p>한눈에 보는 세계사의 흐름! 세트 50년 대여</p>
+                <div><span>6</span>/20</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="background-image: url(./img/slider_img07.webp);">
+          <div class="slider_text_box">
+            <div class="slider_text box7">
+              <table>
+                <tr>
+                  <td><img src="./img/slider_text_select.webp" alt="셀렉트"></td>
+                </tr>
+              </table>
+              <h1>인문학x과학<br>
+                경계를 넘는 지적 모험</h1>
+              <div>
+                <p>셀렉트 일요레터 &lt;문과 남자의 과학 공부&gt;</p>
+                <div><span>7</span>/20</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="background-image: url(./img/slider_img08.webp);">
+          <div class="slider_text_box">
+            <div class="slider_text box8">
+              <table>
+                <tr>
+                  <td><img src="./img/slider_text_50sale.webp" alt="50%할인"></td>
+                  <td><img src="./img/slider_text_rent.webp" alt="대여"></td>
+                </tr>
+              </table>
+              <h1>혼란한 나라를<br>
+                바로 세우는 정책 문답</h1>
+              <div>
+                <p>&lt;정조가 묻고 다산이 답하다&gt; 출간 기념 기획전</p>
+                <div><span>8</span>/20</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="background-image: url(./img/slider_img09.webp);">
+          <div class="slider_text_box">
+            <div class="slider_text box9">
+              <table>
+                <tr>
+                  <td><img src="./img/slider_text_Ronly.webp" alt="R only"></td>
+                  <td><img src="./img/slider_text_select.webp" alt="셀렉트"></td>
+                </tr>
+              </table>
+              <h1>영혼 실존을 둘러싼<br>
+                두 남녀의 진실 공방!</h1>
+              <div>
+                <p>이수현 신작 &lt;경성 고스트 구락부&gt; 대여 특가</p>
+                <div><span>9</span>/20</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="background-image: url(./img/slider_img10.webp);">
+          <div class="slider_text_box">
+            <div class="slider_text box10">
+              <table>
+                <tr>
+                  <td><img src="./img/slider_text_Ronly.webp" alt="R only"></td>
+                  <td><img src="./img/slider_text_select.webp" alt="셀렉트"></td>
+                </tr>
+              </table>
+              <h1>죽어서도 차별받는<br>
+                과체중 귀신들의 분투기</h1>
+              <div>
+                <p>범유진 신작 &lt;과체중 귀신 연합&gt; 리뷰 이벤트</p>
+                <div><span>10</span>/20</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="background-image: url(./img/slider_img11.webp);">
+          <div class="slider_text_box">
+            <div class="slider_text box11">
+              <table>
+                <tr>
+                  <td><img src="./img/slider_text_10sale.webp" alt="10%할인"></td>
+                  <td><img src="./img/slider_text_set.webp" alt="세트"></td>
+                </tr>
+              </table>
+              <h1>5월 가정의달 기념<br>
+                해리포터 특별 세트전</h1>
+              <div>
+                <p>기간 한정! 특가 세트+추가 10% 할인</p>
+                <div><span>11</span>/20</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="background-image: url(./img/slider_img12.webp);">
+          <div class="slider_text_box">
+            <div class="slider_text box12">
+              <table>
+                <tr>
+                  <td><img src="./img/slider_text_Ronly.webp" alt="R only"></td>
+                  <td><img src="./img/slider_text_set.webp" alt="세트"></td>
+                </tr>
+              </table>
+              <h1>고우영 화백 대표작<br>
+                &lt;일지매&gt; 단독 선 출간!</h1>
+              <div>
+                <p>5% 포인트백+기간 한정! 특가세트 OPEN</p>
+                <div><span>12</span>/20</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="background-image: url(./img/slider_img13.webp);">
+          <div class="slider_text_box">
+            <div class="slider_text box13">
+              <table>
+                <tr>
+                  <td><img src="./img/slider_text_10sale.webp" alt="10%할인"></td>
+                  <td><img src="./img/slider_text_set.webp" alt="세트"></td>
+                </tr>
+              </table>
+              <h1>교양 만화의 선구자<br>
+                &lt;먼나라 이웃나라&gt;</h1>
+              <div>
+                <p>개정증보판 e-book 출간 기념 특가 세트</p>
+                <div><span>13</span>/20</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="background-image: url(./img/slider_img14.webp);">
+          <div class="slider_text_box">
+            <div class="slider_text box14">
+              <table>
+                <tr>
+                  <td><img src="./img/slider_text_Ronly.webp" alt="R only"></td>
+                  <td><img src="./img/slider_text_sale.webp" alt="할인"></td>
+                </tr>
+              </table>
+              <h1>대배우 톰 행크스가 들려주는<br>
+                진짜 영화 이야기</h1>
+              <div>
+                <p>소설 &lt;그렇게 걸작은 만들어진다&gt; 선 출간+포백</p>
+                <div><span>14</span>/20</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="background-image: url(./img/slider_img15.webp);">
+          <div class="slider_text_box">
+            <div class="slider_text box15">
+              <table>
+                <tr>
+                  <td><img src="./img/slider_text_new.webp" alt="new"></td>
+                  <td><img src="./img/slider_text_10sale.webp" alt="10%할인"></td>
+                </tr>
+              </table>
+              <h1>노래와 웃음이 함께하는<br>
+                티키타카 부부의 일상</h1>
+              <div>
+                <p>유튜버 &lt;인생 녹음 중&gt; 첫 에세이 출간!</p>
+                <div><span>15</span>/20</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="background-image: url(./img/slider_img16.webp);">
+          <div class="slider_text_box">
+            <div class="slider_text box16">
+              <table>
+                <tr>
+                  <td><img src="./img/slider_text_Ronly.webp" alt="R only"></td>
+                  <td><img src="./img/slider_text_new.webp" alt="new"></td>
+                </tr>
+              </table>
+              <h1>당신이 믿었던 집<br>
+                그 안에 무언가가 있다!</h1>
+              <div>
+                <p>&lt;이상한 집2&gt; 단독 선 출간 기념 5% 포인트백</p>
+                <div><span>16</span>/20</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="background-image: url(./img/slider_img17.webp);">
+          <div class="slider_text_box">
+            <div class="slider_text box17">
+              <table>
+                <tr>
+                  <td><img src="./img/slider_text_new.webp" alt="new"></td>
+                  <td><img src="./img/slider_text_10sale.webp" alt="10%할인"></td>
+                </tr>
+              </table>
+              <h1>&lt;13.67&gt; 찬호께이<br>
+                정통 추리소설의 귀환!</h1>
+              <div>
+                <p>신작 &lt;고독한 용의자&gt; 리뷰 남기면 최대 4천P</p>
+                <div><span>17</span>/20</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="background-image: url(./img/slider_img18.webp);">
+          <div class="slider_text_box">
+            <div class="slider_text box18">
+              <table>
+                <tr>
+                  <td><img src="./img/slider_text_Ronly.webp" alt="R only"></td>
+                  <td><img src="./img/slider_text_50sale.webp" alt="50%할인"></td>
+                </tr>
+              </table>
+              <h1>배두나 주연 영화<br>
+                &lt;바이러스&gt; 원작 소설</h1>
+              <div>
+                <p>&lt;청춘 극한기&gt; 간독 선 출간 기념 5% 포백</p>
+                <div><span>18</span>/20</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="background-image: url(./img/slider_img19.webp);">
+          <div class="slider_text_box">
+            <div class="slider_text box19">
+              <table>
+                <tr>
+                  <td><img src="./img/slider_text_10sale.webp" alt="10%할인"></td>
+                </tr>
+              </table>
+              <h1>마음을 흔드는 이야기들!<br>
+                다산북스 베스트 기획전</h1>
+              <div>
+                <p>대여 20% 추가 할인 쿠폰팩 전원 증정</p>
+                <div><span>19</span>/20</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="background-image: url(./img/slider_img20.webp);">
+          <div class="slider_text_box">
+            <div class="slider_text box20">
+              <table>
+                <tr>
+                  <td><img src="./img/slider_text_new.webp" alt="new"></td>
+                  <td><img src="./img/slider_text_10sale.webp" alt="10%할인"></td>
+                </tr>
+              </table>
+              <h1>마르그리트 뒤라스의<br>
+                희망을 향한 희망</h1>
+              <div>
+                <p>&lt;동네 공원&gt; 출간+1,000P 기대평 이벤트</p>
+                <div><span>20</span>/20</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <span class="prev"><i class="fa-solid fa-chevron-left"></i></span>
+      <span class="next"><i class="fa-solid fa-chevron-right"></i></span>
+    </div>
+  </div>
 
 
 
@@ -53,18 +446,161 @@
 
 
 
-    <!-- area -->
-    <div id="area">
+  <!-- select -->
+  <div id="select">
+    <div>
+      <ul>
+        <li>
+          <a href="#"><img src="/img/select_icon01.webp" alt="100%포백">
+            <p>100%포백</p>
+          </a>
+        </li>
+        <li>
+          <a href="#"><img src="/img/select_icon02.webp" alt="신간">
+            <p>신간</p>
+          </a>
+        </li>
+        <li>
+          <a href="#"><img src="/img/select_icon03.webp" alt="북스 베스트">
+            <p>북스 베스트</p>
+          </a>
+        </li>
+        <li>
+          <a href="#"><img src="/img/select_icon04.webp" alt="단독 선출간">
+            <p>단독 선출간</p>
+          </a>
+        </li>
+        <li>
+          <a href="#"><img src="/img/select_icon05.webp" alt="이벤트">
+            <p>이벤트</p>
+          </a>
+        </li>
+        <li>
+          <a href="#"><img src="/img/select_icon06.webp" alt="이달의 쿠폰">
+            <p>이달의 쿠폰</p>
+          </a>
+        </li>
+        <li>
+          <a href="#"><img src="/img/select_icon07.webp" alt="신작 캘린더">
+            <p>신작 캘린더</p>
+          </a>
+        </li>
+        <li>
+          <a href="#"><img src="/img/select_icon08.webp" alt="혜택 모아봄">
+            <p>혜택 모아봄</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <!-- section1 -->
+  <section id="sec1">
+    <div>
+      <div class="section_title">
+        <h2>오늘, 리디의 발견</h2>
+      </div>
+
+      <div class="sec1_slider">
         <ul>
-            <li class="area_click"><a href="#">추천</a></li>
-            <li><a href="#">기획전</a></li>
-            <li><a href="#">소설</a></li>
-            <li><a href="#">인문/사회/역사</a></li>
-            <li><a href="#">경영/경제</a></li>
-            <li><a href="#">자기계발</a></li>
-            <li><a href="#">에세이/시</a></li>
+          <li class="book_inf">
+            <a href="#">
+              <div class="book_img">
+                <!-- <p>11권 세트</p> -->
+                <div>
+                  <div class="rent">
+                    <img src="./img/sec1_rent.webp" alt="">
+                  </div>
+                </div>
+              </div>
+            </a>
+
+          </li>
+          <li class="book_inf">
+            <a href="#">
+              <div class="book_img">
+                <div>
+                  <div class="sale">
+                    <img src="./img/sec1_10sale.webp" alt="">
+                  </div>
+                </div>
+              </div>
+            </a>
+
+          </li>
+          <li class="book_inf">
+            <a href="#">
+              <div class="book_img">
+                <div>
+                  <div class="sale">
+                    <img src="./img/sec1_10sale.webp" alt="">
+                  </div>
+                  <div class="rent">
+                    <img src="./img/sec1_rent.webp" alt="">
+                  </div>
+                </div>
+              </div>
+            </a>
+
+          </li>
+          <li class="book_inf">
+            <a href="#">
+              <div class="book_img">
+                <div>
+                  <div class="select">
+                    <img src="./img/sec1_select.webp" alt="">
+                  </div>
+                </div>
+              </div>
+            </a>
+
+          </li>
+          <li class="book_inf">
+            <a href="#">
+              <div class="book_img">
+                <div>
+                  <div class="select">
+                    <img src="./img/sec1_select.webp" alt="">
+                  </div>
+                </div>
+              </div>
+            </a>
+
+          </li>
+          <li class="book_inf">
+            <a href="#">
+              <div class="book_img">
+                <div>
+                  <div class="sale">
+                    <img src="./img/sec1_10sale.webp" alt="">
+                  </div>
+                  <div class="select">
+                    <img src="./img/sec1_select.webp" alt="">
+                  </div>
+                </div>
+              </div>
+            </a>
+
+          </li>
+          <li class="book_inf">
+            <a href="#">
+              <div class="book_img"></div>
+            </a>
+
+          </li>
         </ul>
+
+        <span class="prev"><i class="fa-solid fa-chevron-left"></i></span>
+        <span class="next"><i class="fa-solid fa-chevron-right"></i></span>
+      </div>
     </div>
+  </section>
 
 
 
@@ -72,1185 +608,649 @@
 
 
 
-    <!-- slider -->
-    <div id="slider_wrap">
-        <div>
-            <div id="slider">
-                <div style="background-image: url(./img/slider_img01.webp);">
-                    <div class="slider_text_box">
-                        <div class="slider_text box1">
-                            <table>
-                                <tr>
-                                    <td><img src="./img/slider_text_Ronly.webp" alt="R only"></td>
-                                </tr>
-                            </table>
-                            <h1>십오야 쿠폰&포인트 100% 드림</h1>
-                            <div>
-                                <p>이벤트 응모하고 보너스 포인트도 받아가세요!</p>
-                                <div><span>1</span>/20</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div style="background-image: url(./img/slider_img02.webp);">
-                    <div class="slider_text_box">
-                        <div class="slider_text box2">
-                            <table>
-                                <tr>
-                                    <td><img src="./img/slider_text_50sale.webp" alt="50%할인"></td>
-                                    <td><img src="./img/slider_text_rent.webp" alt="대여"></td>
-                                </tr>
-                            </table>
-                            <h1>반값으로 1년 동안!<br>
-                                십오야 X 365일 대여전</h1>
-                            <div>
-                                <p>1권만 대여해도 셀렉트 이용권 전원 증정!</p>
-                                <div><span>2</span>/20</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div style="background-image: url(./img/slider_img03.webp);">
-                    <div class="slider_text_box">
-                        <div class="slider_text box3">
-                            <table>
-                                <tr>
-                                    <td><img src="./img/slider_text_set.webp" alt="세트"></td>
-                                    <td><img src="./img/slider_text_rent.webp" alt="대여"></td>
-                                </tr>
-                            </table>
-                            <h1>&lt;레이코 형사 시리즈&gt;<br>
-                                세트 특가 50년 대여</h1>
-                            <div>
-                                <p>1주 한정! 얼리버드 1,000P포인트백</p>
-                                <div><span>3</span>/20</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div style="background-image: url(./img/slider_img04.webp);">
-                    <div class="slider_text_box">
-                        <div class="slider_text box4">
-                            <table>
-                                <tr>
-                                    <td><img src="./img/slider_text_Ronly.webp" alt="R only"></td>
-                                    <td><img src="./img/slider_text_select.webp" alt="셀렉트"></td>
-                                </tr>
-                            </table>
-                            <h1>&lt;너의 췌장을 먹고 싶어&gt;<br>
-                                스미노 요루 신작</h1>
-                            <div>
-                                <p>단독 선 출간 + 5% 포인트백 (~5/27)</p>
-                                <div><span>4</span>/20</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div style="background-image: url(./img/slider_img05.webp);">
-                    <div class="slider_text_box">
-                        <div class="slider_text box5">
-                            <table>
-                                <tr>
-                                    <td><img src="./img/slider_text_new.webp" alt="new"></td>
-                                    <td><img src="./img/slider_text_10sale.webp" alt="10%할인"></td>
-                                </tr>
-                            </table>
-                            <h1>유시민 &lt;청춘의 독서&gt;<br>
-                                특별증보판 출간!</h1>
-                            <div>
-                                <p>인문서 기획전 선착순 대여 20%추가 할인</p>
-                                <div><span>5</span>/20</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div style="background-image: url(./img/slider_img06.webp);">
-                    <div class="slider_text_box">
-                        <div class="slider_text box6">
-                            <table>
-                                <tr>
-                                    <td><img src="./img/slider_text_set.webp" alt="세트"></td>
-                                    <td><img src="./img/slider_text_rent.webp" alt="대여"></td>
-                                </tr>
-                            </table>
-                            <h1>&lt;지도로 읽는다 시리즈&gt;<br>
-                                세트 100% 포인트백</h1>
-                            <div>
-                                <p>한눈에 보는 세계사의 흐름! 세트 50년 대여</p>
-                                <div><span>6</span>/20</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div style="background-image: url(./img/slider_img07.webp);">
-                    <div class="slider_text_box">
-                        <div class="slider_text box7">
-                            <table>
-                                <tr>
-                                    <td><img src="./img/slider_text_select.webp" alt="셀렉트"></td>
-                                </tr>
-                            </table>
-                            <h1>인문학x과학<br>
-                                경계를 넘는 지적 모험</h1>
-                            <div>
-                                <p>셀렉트 일요레터 &lt;문과 남자의 과학 공부&gt;</p>
-                                <div><span>7</span>/20</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div style="background-image: url(./img/slider_img08.webp);">
-                    <div class="slider_text_box">
-                        <div class="slider_text box8">
-                            <table>
-                                <tr>
-                                    <td><img src="./img/slider_text_50sale.webp" alt="50%할인"></td>
-                                    <td><img src="./img/slider_text_rent.webp" alt="대여"></td>
-                                </tr>
-                            </table>
-                            <h1>혼란한 나라를<br>
-                                바로 세우는 정책 문답</h1>
-                            <div>
-                                <p>&lt;정조가 묻고 다산이 답하다&gt; 출간 기념 기획전</p>
-                                <div><span>8</span>/20</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div style="background-image: url(./img/slider_img09.webp);">
-                    <div class="slider_text_box">
-                        <div class="slider_text box9">
-                            <table>
-                                <tr>
-                                    <td><img src="./img/slider_text_Ronly.webp" alt="R only"></td>
-                                    <td><img src="./img/slider_text_select.webp" alt="셀렉트"></td>
-                                </tr>
-                            </table>
-                            <h1>영혼 실존을 둘러싼<br>
-                                두 남녀의 진실 공방!</h1>
-                            <div>
-                                <p>이수현 신작 &lt;경성 고스트 구락부&gt; 대여 특가</p>
-                                <div><span>9</span>/20</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div style="background-image: url(./img/slider_img10.webp);">
-                    <div class="slider_text_box">
-                        <div class="slider_text box10">
-                            <table>
-                                <tr>
-                                    <td><img src="./img/slider_text_Ronly.webp" alt="R only"></td>
-                                    <td><img src="./img/slider_text_select.webp" alt="셀렉트"></td>
-                                </tr>
-                            </table>
-                            <h1>죽어서도 차별받는<br>
-                                과체중 귀신들의 분투기</h1>
-                            <div>
-                                <p>범유진 신작 &lt;과체중 귀신 연합&gt; 리뷰 이벤트</p>
-                                <div><span>10</span>/20</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div style="background-image: url(./img/slider_img11.webp);">
-                    <div class="slider_text_box">
-                        <div class="slider_text box11">
-                            <table>
-                                <tr>
-                                    <td><img src="./img/slider_text_10sale.webp" alt="10%할인"></td>
-                                    <td><img src="./img/slider_text_set.webp" alt="세트"></td>
-                                </tr>
-                            </table>
-                            <h1>5월 가정의달 기념<br>
-                                해리포터 특별 세트전</h1>
-                            <div>
-                                <p>기간 한정! 특가 세트+추가 10% 할인</p>
-                                <div><span>11</span>/20</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div style="background-image: url(./img/slider_img12.webp);">
-                    <div class="slider_text_box">
-                        <div class="slider_text box12">
-                            <table>
-                                <tr>
-                                    <td><img src="./img/slider_text_Ronly.webp" alt="R only"></td>
-                                    <td><img src="./img/slider_text_set.webp" alt="세트"></td>
-                                </tr>
-                            </table>
-                            <h1>고우영 화백 대표작<br>
-                                &lt;일지매&gt; 단독 선 출간!</h1>
-                            <div>
-                                <p>5% 포인트백+기간 한정! 특가세트 OPEN</p>
-                                <div><span>12</span>/20</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div style="background-image: url(./img/slider_img13.webp);">
-                    <div class="slider_text_box">
-                        <div class="slider_text box13">
-                            <table>
-                                <tr>
-                                    <td><img src="./img/slider_text_10sale.webp" alt="10%할인"></td>
-                                    <td><img src="./img/slider_text_set.webp" alt="세트"></td>
-                                </tr>
-                            </table>
-                            <h1>교양 만화의 선구자<br>
-                                &lt;먼나라 이웃나라&gt;</h1>
-                            <div>
-                                <p>개정증보판 e-book 출간 기념 특가 세트</p>
-                                <div><span>13</span>/20</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div style="background-image: url(./img/slider_img14.webp);">
-                    <div class="slider_text_box">
-                        <div class="slider_text box14">
-                            <table>
-                                <tr>
-                                    <td><img src="./img/slider_text_Ronly.webp" alt="R only"></td>
-                                    <td><img src="./img/slider_text_sale.webp" alt="할인"></td>
-                                </tr>
-                            </table>
-                            <h1>대배우 톰 행크스가 들려주는<br>
-                                진짜 영화 이야기</h1>
-                            <div>
-                                <p>소설 &lt;그렇게 걸작은 만들어진다&gt; 선 출간+포백</p>
-                                <div><span>14</span>/20</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div style="background-image: url(./img/slider_img15.webp);">
-                    <div class="slider_text_box">
-                        <div class="slider_text box15">
-                            <table>
-                                <tr>
-                                    <td><img src="./img/slider_text_new.webp" alt="new"></td>
-                                    <td><img src="./img/slider_text_10sale.webp" alt="10%할인"></td>
-                                </tr>
-                            </table>
-                            <h1>노래와 웃음이 함께하는<br>
-                                티키타카 부부의 일상</h1>
-                            <div>
-                                <p>유튜버 &lt;인생 녹음 중&gt; 첫 에세이 출간!</p>
-                                <div><span>15</span>/20</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div style="background-image: url(./img/slider_img16.webp);">
-                    <div class="slider_text_box">
-                        <div class="slider_text box16">
-                            <table>
-                                <tr>
-                                    <td><img src="./img/slider_text_Ronly.webp" alt="R only"></td>
-                                    <td><img src="./img/slider_text_new.webp" alt="new"></td>
-                                </tr>
-                            </table>
-                            <h1>당신이 믿었던 집<br>
-                                그 안에 무언가가 있다!</h1>
-                            <div>
-                                <p>&lt;이상한 집2&gt; 단독 선 출간 기념 5% 포인트백</p>
-                                <div><span>16</span>/20</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div style="background-image: url(./img/slider_img17.webp);">
-                    <div class="slider_text_box">
-                        <div class="slider_text box17">
-                            <table>
-                                <tr>
-                                    <td><img src="./img/slider_text_new.webp" alt="new"></td>
-                                    <td><img src="./img/slider_text_10sale.webp" alt="10%할인"></td>
-                                </tr>
-                            </table>
-                            <h1>&lt;13.67&gt; 찬호께이<br>
-                                정통 추리소설의 귀환!</h1>
-                            <div>
-                                <p>신작 &lt;고독한 용의자&gt; 리뷰 남기면 최대 4천P</p>
-                                <div><span>17</span>/20</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div style="background-image: url(./img/slider_img18.webp);">
-                    <div class="slider_text_box">
-                        <div class="slider_text box18">
-                            <table>
-                                <tr>
-                                    <td><img src="./img/slider_text_Ronly.webp" alt="R only"></td>
-                                    <td><img src="./img/slider_text_50sale.webp" alt="50%할인"></td>
-                                </tr>
-                            </table>
-                            <h1>배두나 주연 영화<br>
-                                &lt;바이러스&gt; 원작 소설</h1>
-                            <div>
-                                <p>&lt;청춘 극한기&gt; 간독 선 출간 기념 5% 포백</p>
-                                <div><span>18</span>/20</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div style="background-image: url(./img/slider_img19.webp);">
-                    <div class="slider_text_box">
-                        <div class="slider_text box19">
-                            <table>
-                                <tr>
-                                    <td><img src="./img/slider_text_10sale.webp" alt="10%할인"></td>
-                                </tr>
-                            </table>
-                            <h1>마음을 흔드는 이야기들!<br>
-                                다산북스 베스트 기획전</h1>
-                            <div>
-                                <p>대여 20% 추가 할인 쿠폰팩 전원 증정</p>
-                                <div><span>19</span>/20</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div style="background-image: url(./img/slider_img20.webp);">
-                    <div class="slider_text_box">
-                        <div class="slider_text box20">
-                            <table>
-                                <tr>
-                                    <td><img src="./img/slider_text_new.webp" alt="new"></td>
-                                    <td><img src="./img/slider_text_10sale.webp" alt="10%할인"></td>
-                                </tr>
-                            </table>
-                            <h1>마르그리트 뒤라스의<br>
-                                희망을 향한 희망</h1>
-                            <div>
-                                <p>&lt;동네 공원&gt; 출간+1,000P 기대평 이벤트</p>
-                                <div><span>20</span>/20</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-    
-            <span class="prev"><i class="fa-solid fa-chevron-left"></i></span>
-            <span class="next"><i class="fa-solid fa-chevron-right"></i></span>
-        </div>
-    </div>
-
-
-
-
-
-
-
-    <!-- select -->
-    <div id="select">
-        <div>
+  <!-- section2 -->
+  <section id="sec2">
+    <div>
+      <div class="section_title">
+        <h2>지금 많이 읽고 있는 작품</h2>
+      </div>
+      <div class="books">
+        <div class="books_wrap">
+          <div>
             <ul>
-                <li>
-                    <a href="#"><img src="/img/select_icon01.webp" alt="100%포백">
-                        <p>100%포백</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#"><img src="/img/select_icon02.webp" alt="신간">
-                        <p>신간</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#"><img src="/img/select_icon03.webp" alt="북스 베스트">
-                        <p>북스 베스트</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#"><img src="/img/select_icon04.webp" alt="단독 선출간">
-                        <p>단독 선출간</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#"><img src="/img/select_icon05.webp" alt="이벤트">
-                        <p>이벤트</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#"><img src="/img/select_icon06.webp" alt="이달의 쿠폰">
-                        <p>이달의 쿠폰</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#"><img src="/img/select_icon07.webp" alt="신작 캘린더">
-                        <p>신작 캘린더</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#"><img src="/img/select_icon08.webp" alt="혜택 모아봄">
-                        <p>혜택 모아봄</p>
-                    </a>
-                </li>
+              <li>
+                <ol>
+                  <li class="book_detail">
+
+                  </li>
+                  <li class="book_detail">
+
+                  </li>
+                  <li class="book_detail">
+
+                  </li>
+                </ol>
+              </li>
+              <li>
+                <ol>
+                  <li class="book_detail">
+
+                  </li>
+                  <li class="book_detail">
+
+                  </li>
+                  <li class="book_detail">
+
+                  </li>
+                </ol>
+              </li>
+              <li>
+                <ol>
+                  <li class="book_detail">
+
+                  </li>
+                  <li class="book_detail">
+
+                  </li>
+                  <li class="book_detail">
+
+                  </li>
+                </ol>
+              </li>
+              <li>
+                <ol>
+                  <li class="book_detail">
+
+                  </li>
+                  <li class="book_detail">
+
+                  </li>
+                  <li class="book_detail">
+
+                  </li>
+                </ol>
+              </li>
+              <li>
+                <ol>
+                  <li class="book_detail">
+
+                  </li>
+                  <li class="book_detail">
+
+                  </li>
+                  <li class="book_detail">
+
+                  </li>
+                </ol>
+              </li>
+              <li>
+                <ol>
+                  <li class="book_detail">
+
+                  </li>
+                  <li class="book_detail">
+
+                  </li>
+                  <li class="book_detail">
+
+                  </li>
+                </ol>
+              </li>
             </ul>
+          </div>
         </div>
+
+        <span class="prev"><i class="fa-solid fa-chevron-left"></i></span>
+        <span class="next"><i class="fa-solid fa-chevron-right"></i></span>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <!-- section3 -->
+  <section id="sec3">
+    <div>
+      <div class="section_title">
+        <h2>MD's Pick</h2>
+      </div>
+      <div class="books">
+        <div class="books_wrap">
+          <div>
+            <ul>
+              <li>
+                <a href="#">
+                  <div class="books_Img img1">
+                    <div style="background-color: rgb(187, 187, 187);"></div>
+                  </div>
+                  <div class="books_text"></div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="books_Img img2">
+                    <div style="background-color: rgb(141, 176, 209);"></div>
+                  </div>
+                  <div class="books_text"></div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="books_Img img3">
+                    <div style="background-color: palevioletred;"></div>
+                  </div>
+                  <div class="books_text"></div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="books_Img img4">
+                    <div style="background-color: rgb(241, 119, 97);"></div>
+                  </div>
+                  <div class="books_text"></div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <span class="prev"><i class="fa-solid fa-chevron-left"></i></span>
+        <span class="next"><i class="fa-solid fa-chevron-right"></i></span>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <!-- section4 -->
+  <section id="sec4">
+    <div>
+      <div class="section_title">
+        <h2>베스트</h2>
+        <h4>더보기</h4>
+      </div>
+      <div class="books">
+        <div class="books_wrap">
+          <div>
+            <ul>
+              <li>
+                <ol>
+                  <li class="book_detail">
+
+                  </li>
+                  <li class="book_detail">
+
+                  </li>
+                  <li class="book_detail">
+
+                  </li>
+                </ol>
+              </li>
+              <li>
+                <ol>
+                  <li class="book_detail">
+
+                  </li>
+                  <li class="book_detail">
+
+                  </li>
+                  <li class="book_detail">
+
+                  </li>
+                </ol>
+              </li>
+              <li>
+                <ol>
+                  <li class="book_detail">
+
+                  </li>
+                  <li class="book_detail">
+
+                  </li>
+                  <li class="book_detail">
+
+                  </li>
+                </ol>
+              </li>
+              <li>
+                <ol>
+                  <li class="book_detail">
+
+                  </li>
+                  <li class="book_detail">
+
+                  </li>
+                  <li class="book_detail">
+
+                  </li>
+                </ol>
+              </li>
+              <li>
+                <ol>
+                  <li class="book_detail">
+
+                  </li>
+                  <li class="book_detail">
+
+                  </li>
+                  <li class="book_detail">
+
+                  </li>
+                </ol>
+              </li>
+              <li>
+                <ol>
+                  <li class="book_detail">
+
+                  </li>
+                  <li class="book_detail">
+
+                  </li>
+                  <li class="book_detail">
+
+                  </li>
+                </ol>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <span class="prev"><i class="fa-solid fa-chevron-left"></i></span>
+        <span class="next"><i class="fa-solid fa-chevron-right"></i></span>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <!-- section5 -->
+  <section id="sec5">
+    <div>
+      <div class="section_title">
+        <h2>새로 나온 작품</h2>
+        <h4>더보기</h4>
+      </div>
+
+      <div class="sec1_slider">
+        <ul>
+          <li class="book_inf">
+            <a href="#">
+              <div class="book_img"></div>
+            </a>
+
+          </li>
+          <li class="book_inf">
+            <a href="#">
+              <div class="book_img">
+                <div>
+                  <div class="sale">
+                    <img src="./img/sec1_10sale.webp" alt="">
+                  </div>
+                  <div class="select">
+                    <img src="./img/sec1_select.webp" alt="">
+                  </div>
+                </div>
+              </div>
+            </a>
+
+          </li>
+          <li class="book_inf">
+            <a href="#">
+              <div class="book_img"></div>
+            </a>
+
+          </li>
+          <li class="book_inf">
+            <a href="#">
+              <div class="book_img">
+                <div>
+                  <div class="sale">
+                    <img src="./img/sec1_10sale.webp" alt="">
+                  </div>
+                </div>
+              </div>
+            </a>
+
+          </li>
+          <li class="book_inf">
+            <a href="#">
+              <div class="book_img"></div>
+            </a>
+
+          </li>
+          <li class="book_inf">
+            <a href="#">
+              <div class="book_img">
+                <div>
+                  <div class="sale">
+                    <img src="./img/sec1_10sale.webp" alt="">
+                  </div>
+                </div>
+              </div>
+            </a>
+
+          </li>
+          <li class="book_inf">
+            <a href="#">
+              <div class="book_img"></div>
+            </a>
+
+          </li>
+        </ul>
+
+        <span class="prev"><i class="fa-solid fa-chevron-left"></i></span>
+        <span class="next"><i class="fa-solid fa-chevron-right"></i></span>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <!-- section6 -->
+  <section id="sec6">
+    <div>
+      <div class="section_title">
+        <h2>이주의 셀렉트 인기도서</h2>
+        <h4>더보기</h4>
+      </div>
+
+      <div class="sec1_slider">
+        <ul>
+          <li class="book_inf">
+            <a href="#">
+              <div class="book_img">
+                <!-- <p>11권 세트</p> -->
+                <div>
+                  <div class="sale">
+                    <img src="./img/sec1_10sale.webp" alt="">
+                  </div>
+                  <div class="select">
+                    <img src="./img/sec1_select.webp" alt="">
+                  </div>
+                  <div class="rent">
+                    <img src="./img/sec1_rent.webp" alt="">
+                  </div>
+                </div>
+              </div>
+            </a>
+
+          </li>
+          <li class="book_inf">
+            <a href="#">
+              <div class="book_img">
+                <div>
+                  <div class="select">
+                    <img src="./img/sec1_select.webp" alt="">
+                  </div>
+                </div>
+              </div>
+            </a>
+
+          </li>
+          <li class="book_inf">
+            <a href="#">
+              <div class="book_img">
+                <div>
+                  <div class="select">
+                    <img src="./img/sec1_select.webp" alt="">
+                  </div>
+                </div>
+              </div>
+            </a>
+
+          </li>
+          <li class="book_inf">
+            <a href="#">
+              <div class="book_img">
+                <div>
+                  <div class="select">
+                    <img src="./img/sec1_select.webp" alt="">
+                  </div>
+                </div>
+              </div>
+            </a>
+
+          </li>
+          <li class="book_inf">
+            <a href="#">
+              <div class="book_img">
+                <div>
+                  <div class="select">
+                    <img src="./img/sec1_select.webp" alt="">
+                  </div>
+                </div>
+              </div>
+            </a>
+
+          </li>
+          <li class="book_inf">
+            <a href="#">
+              <div class="book_img">
+                <div>
+                  <div class="sale">
+                    <img src="./img/sec1_10sale.webp" alt="">
+                  </div>
+                  <div class="select">
+                    <img src="./img/sec1_select.webp" alt="">
+                  </div>
+                </div>
+              </div>
+            </a>
+
+          </li>
+          <li class="book_inf">
+            <a href="#">
+              <div class="book_img">
+                <div>
+                  <div class="select">
+                    <img src="./img/sec1_select.webp" alt="">
+                  </div>
+                </div>
+              </div>
+            </a>
+
+          </li>
+        </ul>
+
+        <span class="prev"><i class="fa-solid fa-chevron-left"></i></span>
+        <span class="next"><i class="fa-solid fa-chevron-right"></i></span>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <!-- section7 -->
+  <section id="sec7">
+    <div>
+      <div class="section_title">
+        <h2>한 주 한 책, 셀렉트 레터</h2>
+      </div>
+      <div class="books">
+        <div class="books_wrap">
+          <div>
+            <ul>
+              <li>
+                <a href="#">
+                  <div class="books_Img img1">
+                    <div style="background-color: rgb(12, 64, 141);"></div>
+                  </div>
+                  <div class="books_text"></div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="books_Img img2">
+                    <div style="background-color: teal;"></div>
+                  </div>
+                  <div class="books_text"></div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="books_Img img3">
+                    <div style="background-color: khaki;"></div>
+                  </div>
+                  <div class="books_text"></div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="books_Img img4">
+                    <div style="background-color: rgb(61, 12, 141);"></div>
+                  </div>
+                  <div class="books_text"></div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <span class="prev"><i class="fa-solid fa-chevron-left"></i></span>
+        <span class="next"><i class="fa-solid fa-chevron-right"></i></span>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <!-- section8 -->
+  <section id="sec8">
+    <div>
+      <div class="section_title">
+        <h2>이벤트</h2>
+      </div>
+      <div class="books">
+        <div class="books_wrap">
+          <div>
+            <ul>
+              <li>
+                <a href="#">
+                  <div class="books_Img img1">
+                    <div style="background-color: darkred;"></div>
+                  </div>
+                  <div class="books_text"></div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="books_Img img2">
+                    <div style="background-color: gold;"></div>
+                  </div>
+                  <div class="books_text"></div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="books_Img img3">
+                    <div style="background-color: burlywood;"></div>
+                  </div>
+                  <div class="books_text"></div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="books_Img img4">
+                    <div style="background-color: darkorange;"></div>
+                  </div>
+                  <div class="books_text"></div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <span class="prev"><i class="fa-solid fa-chevron-left"></i></span>
+        <span class="next"><i class="fa-solid fa-chevron-right"></i></span>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <!-- footer -->
+  <footer>
+    <div class="top_foot">
+
+      <div class="top_foot_r">
+
+        <div class="f_box1">
+          <a href="#"><img src="./img/customer_center.svg" alt="customer_center" id="c_c">고객센터</a>
+          <a href="#"><img src="./img/notice.svg" alt="notice" id="notice">공지사항</a>
+        </div>
+        <div class="f_box2">
+          <p>서비스</p>
+          <a href="#">제휴카드</a>
+          <a href="#">뷰어 다운로드</a>
+          <a href="#">CP사이트</a>
+          <a href="#">리디바탕</a>
+        </div>
+        <div class="f_box3">
+          <p>기타 문의</p>
+          <a href="#">콘텐츠 제공 문의</a>
+          <a href="#">사업 제휴 문의</a>
+        </div>
+        <div class="f_box4">
+          <p>회사</p>
+          <a href="#">회사 소개</a>
+          <a href="#">인재채용&nbsp;<span id="new">N</span></a>
+        </div>
+      </div>
+
+      <div class="top_foot_l">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" id="twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" id="play"><i class="fa-solid fa-play"></i></a>
+        <a href="#"><img src="./img/tictik_icon.svg" alt="tictik_icon"></a>
+      </div>
     </div>
 
-
-
-
-
-
-
-    <!-- section1 -->
-    <section id="sec1">
-        <div>
-            <div class="section_title">
-                <h2>오늘, 리디의 발견</h2>
-            </div>
-            
-            <div class="sec1_slider">
-                <ul>
-                    <li class="book_inf">
-                        <a href="#">
-                            <div class="book_img">
-                                <!-- <p>11권 세트</p> -->
-                                <div>
-                                    <div class="rent">
-                                        <img src="./img/sec1_rent.webp" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </a>                        
-                        
-                    </li>
-                    <li class="book_inf">
-                        <a href="#">
-                            <div class="book_img">
-                                <div>
-                                    <div class="sale">
-                                        <img src="./img/sec1_10sale.webp" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        
-                    </li>
-                    <li class="book_inf">
-                        <a href="#">
-                            <div class="book_img">
-                                <div>
-                                    <div class="sale">
-                                        <img src="./img/sec1_10sale.webp" alt="">
-                                    </div>
-                                    <div class="rent">
-                                        <img src="./img/sec1_rent.webp" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </a>                        
-                        
-                    </li>
-                    <li class="book_inf">
-                        <a href="#">
-                            <div class="book_img">
-                                <div>
-                                    <div class="select">
-                                        <img src="./img/sec1_select.webp" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-
-                    </li>
-                    <li class="book_inf">
-                        <a href="#">
-                            <div class="book_img">
-                                <div>
-                                    <div class="select">
-                                        <img src="./img/sec1_select.webp" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-
-                    </li>
-                    <li class="book_inf">
-                        <a href="#">
-                            <div class="book_img">
-                                <div>
-                                    <div class="sale">
-                                        <img src="./img/sec1_10sale.webp" alt="">
-                                    </div>
-                                    <div class="select">
-                                        <img src="./img/sec1_select.webp" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-
-                    </li>
-                    <li class="book_inf">
-                        <a href="#">
-                            <div class="book_img"></div>
-                        </a>
-
-                    </li>
-                </ul>
-
-                <span class="prev"><i class="fa-solid fa-chevron-left"></i></span>
-                <span class="next"><i class="fa-solid fa-chevron-right"></i></span>
-            </div>
-        </div>
-    </section>
-
-
-
-
-
-
-
-    <!-- section2 -->
-    <section id="sec2">
-        <div>
-            <div class="section_title">
-                <h2>지금 많이 읽고 있는 작품</h2>
-            </div>
-            <div class="books">
-                <div class="books_wrap">
-                    <div>
-                        <ul>
-                            <li>
-                                <ol>
-                                    <li class="book_detail">
-                                        
-                                    </li>
-                                    <li class="book_detail">
-                                        
-                                    </li>
-                                    <li class="book_detail">
-                                        
-                                    </li>
-                                </ol>
-                            </li>
-                            <li>
-                                <ol>
-                                    <li class="book_detail">
-                                        
-                                    </li>
-                                    <li class="book_detail">
-                                        
-                                    </li>
-                                    <li class="book_detail">
-                                        
-                                    </li>
-                                </ol>
-                            </li>
-                            <li>
-                                <ol>
-                                    <li class="book_detail">
-                                        
-                                    </li>
-                                    <li class="book_detail">
-                                        
-                                    </li>
-                                    <li class="book_detail">
-                                        
-                                    </li>
-                                </ol>
-                            </li>
-                            <li>
-                                <ol>
-                                    <li class="book_detail">
-                                        
-                                    </li>
-                                    <li class="book_detail">
-                                        
-                                    </li>
-                                    <li class="book_detail">
-                                        
-                                    </li>
-                                </ol>
-                            </li>
-                            <li>
-                                <ol>
-                                    <li class="book_detail">
-                                        
-                                    </li>
-                                    <li class="book_detail">
-                                        
-                                    </li>
-                                    <li class="book_detail">
-                                        
-                                    </li>
-                                </ol>
-                            </li>
-                            <li>
-                                <ol>
-                                    <li class="book_detail">
-                                        
-                                    </li>
-                                    <li class="book_detail">
-                                        
-                                    </li>
-                                    <li class="book_detail">
-                                        
-                                    </li>
-                                </ol>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <span class="prev"><i class="fa-solid fa-chevron-left"></i></span>
-                <span class="next"><i class="fa-solid fa-chevron-right"></i></span>
-            </div>
-        </div>
-    </section>
-
-
-
-
-
-
-
-    <!-- section3 -->
-     <section id="sec3">
-        <div>
-            <div class="section_title">
-                <h2>MD's Pick</h2>
-            </div>
-            <div class="books">
-                <div class="books_wrap">
-                    <div>
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    <div class="books_Img img1">
-                                        <div style="background-color: rgb(187, 187, 187);"></div>
-                                    </div>
-                                    <div class="books_text"></div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="books_Img img2">
-                                        <div style="background-color: rgb(141, 176, 209);"></div>
-                                    </div>
-                                    <div class="books_text"></div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="books_Img img3">
-                                        <div style="background-color: palevioletred;"></div>
-                                    </div>
-                                    <div class="books_text"></div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="books_Img img4">
-                                        <div style="background-color: rgb(241, 119, 97);"></div>
-                                    </div>
-                                    <div class="books_text"></div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <span class="prev"><i class="fa-solid fa-chevron-left"></i></span>
-                <span class="next"><i class="fa-solid fa-chevron-right"></i></span>
-            </div>
-        </div>
-     </section>
-
-
-
-
-
-
-
-    <!-- section4 -->
-     <section id="sec4">
-        <div>
-            <div class="section_title">
-                <h2>베스트</h2>
-                <h4>더보기</h4>
-            </div>
-            <div class="books">
-                <div class="books_wrap">
-                    <div>
-                        <ul>
-                            <li>
-                                <ol>
-                                    <li class="book_detail">
-                                        
-                                    </li>
-                                    <li class="book_detail">
-                                        
-                                    </li>
-                                    <li class="book_detail">
-                                        
-                                    </li>
-                                </ol>
-                            </li>
-                            <li>
-                                <ol>
-                                    <li class="book_detail">
-                                        
-                                    </li>
-                                    <li class="book_detail">
-                                        
-                                    </li>
-                                    <li class="book_detail">
-                                        
-                                    </li>
-                                </ol>
-                            </li>
-                            <li>
-                                <ol>
-                                    <li class="book_detail">
-                                        
-                                    </li>
-                                    <li class="book_detail">
-                                        
-                                    </li>
-                                    <li class="book_detail">
-                                        
-                                    </li>
-                                </ol>
-                            </li>
-                            <li>
-                                <ol>
-                                    <li class="book_detail">
-                                        
-                                    </li>
-                                    <li class="book_detail">
-                                        
-                                    </li>
-                                    <li class="book_detail">
-                                        
-                                    </li>
-                                </ol>
-                            </li>
-                            <li>
-                                <ol>
-                                    <li class="book_detail">
-                                        
-                                    </li>
-                                    <li class="book_detail">
-                                        
-                                    </li>
-                                    <li class="book_detail">
-                                        
-                                    </li>
-                                </ol>
-                            </li>
-                            <li>
-                                <ol>
-                                    <li class="book_detail">
-                                        
-                                    </li>
-                                    <li class="book_detail">
-                                        
-                                    </li>
-                                    <li class="book_detail">
-                                        
-                                    </li>
-                                </ol>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <span class="prev"><i class="fa-solid fa-chevron-left"></i></span>
-                <span class="next"><i class="fa-solid fa-chevron-right"></i></span>
-            </div>
-        </div>
-    </section>
-
-
-
-
-
-
-
-    <!-- section5 -->
-    <section id="sec5">
-        <div>
-            <div class="section_title">
-                <h2>새로 나온 작품</h2>
-                <h4>더보기</h4>
-            </div>
-            
-            <div class="sec1_slider">
-                <ul>
-                    <li class="book_inf">
-                        <a href="#">
-                            <div class="book_img"></div>
-                        </a>                        
-                        
-                    </li>
-                    <li class="book_inf">
-                        <a href="#">
-                            <div class="book_img">
-                                <div>
-                                    <div class="sale">
-                                        <img src="./img/sec1_10sale.webp" alt="">
-                                    </div>
-                                    <div class="select">
-                                        <img src="./img/sec1_select.webp" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        
-                    </li>
-                    <li class="book_inf">
-                        <a href="#">
-                            <div class="book_img"></div>
-                        </a>                        
-                        
-                    </li>
-                    <li class="book_inf">
-                        <a href="#">
-                            <div class="book_img">
-                                <div>
-                                    <div class="sale">
-                                        <img src="./img/sec1_10sale.webp" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-
-                    </li>
-                    <li class="book_inf">
-                        <a href="#">
-                            <div class="book_img"></div>
-                        </a>
-
-                    </li>
-                    <li class="book_inf">
-                        <a href="#">
-                            <div class="book_img">
-                                <div>
-                                    <div class="sale">
-                                        <img src="./img/sec1_10sale.webp" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-
-                    </li>
-                    <li class="book_inf">
-                        <a href="#">
-                            <div class="book_img"></div>
-                        </a>
-
-                    </li>
-                </ul>
-
-                <span class="prev"><i class="fa-solid fa-chevron-left"></i></span>
-                <span class="next"><i class="fa-solid fa-chevron-right"></i></span>
-            </div>
-        </div>
-    </section>
-
-
-
-
-
-
-
-    <!-- section6 -->
-     <section id="sec6">
-        <div>
-            <div class="section_title">
-                <h2>이주의 셀렉트 인기도서</h2>
-                <h4>더보기</h4>
-            </div>
-            
-            <div class="sec1_slider">
-                <ul>
-                    <li class="book_inf">
-                        <a href="#">
-                            <div class="book_img">
-                                <!-- <p>11권 세트</p> -->
-                                <div>
-                                    <div class="sale">
-                                        <img src="./img/sec1_10sale.webp" alt="">
-                                    </div>
-                                    <div class="select">
-                                        <img src="./img/sec1_select.webp" alt="">
-                                    </div>
-                                    <div class="rent">
-                                        <img src="./img/sec1_rent.webp" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </a>                        
-                        
-                    </li>
-                    <li class="book_inf">
-                        <a href="#">
-                            <div class="book_img">
-                                <div>
-                                    <div class="select">
-                                        <img src="./img/sec1_select.webp" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        
-                    </li>
-                    <li class="book_inf">
-                        <a href="#">
-                            <div class="book_img">
-                                <div>
-                                    <div class="select">
-                                        <img src="./img/sec1_select.webp" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </a>                        
-                        
-                    </li>
-                    <li class="book_inf">
-                        <a href="#">
-                            <div class="book_img">
-                                <div>
-                                    <div class="select">
-                                        <img src="./img/sec1_select.webp" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-
-                    </li>
-                    <li class="book_inf">
-                        <a href="#">
-                            <div class="book_img">
-                                <div>
-                                    <div class="select">
-                                        <img src="./img/sec1_select.webp" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-
-                    </li>
-                    <li class="book_inf">
-                        <a href="#">
-                            <div class="book_img">
-                                <div>
-                                    <div class="sale">
-                                        <img src="./img/sec1_10sale.webp" alt="">
-                                    </div>
-                                    <div class="select">
-                                        <img src="./img/sec1_select.webp" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-
-                    </li>
-                    <li class="book_inf">
-                        <a href="#">
-                            <div class="book_img">
-                                <div>
-                                    <div class="select">
-                                        <img src="./img/sec1_select.webp" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-
-                    </li>
-                </ul>
-
-                <span class="prev"><i class="fa-solid fa-chevron-left"></i></span>
-                <span class="next"><i class="fa-solid fa-chevron-right"></i></span>
-            </div>
-        </div>
-    </section>
-
-
-
-
-
-
-
-    <!-- section7 -->
-     <section id="sec7">
-        <div>
-            <div class="section_title">
-                <h2>한 주 한 책, 셀렉트 레터</h2>
-            </div>
-            <div class="books">
-                <div class="books_wrap">
-                    <div>
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    <div class="books_Img img1">
-                                        <div style="background-color: rgb(12, 64, 141);"></div>
-                                    </div>
-                                    <div class="books_text"></div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="books_Img img2">
-                                        <div style="background-color: teal;"></div>
-                                    </div>
-                                    <div class="books_text"></div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="books_Img img3">
-                                        <div style="background-color: khaki;"></div>
-                                    </div>
-                                    <div class="books_text"></div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="books_Img img4">
-                                        <div style="background-color: rgb(61, 12, 141);"></div>
-                                    </div>
-                                    <div class="books_text"></div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <span class="prev"><i class="fa-solid fa-chevron-left"></i></span>
-                <span class="next"><i class="fa-solid fa-chevron-right"></i></span>
-            </div>
-        </div>
-     </section>
-
-
-
-
-
-
-
-    <!-- section8 -->
-     <section id="sec8">
-        <div>
-            <div class="section_title">
-                <h2>이벤트</h2>
-            </div>
-            <div class="books">
-                <div class="books_wrap">
-                    <div>
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    <div class="books_Img img1">
-                                        <div style="background-color: darkred;"></div>
-                                    </div>
-                                    <div class="books_text"></div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="books_Img img2">
-                                        <div style="background-color: gold;"></div>
-                                    </div>
-                                    <div class="books_text"></div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="books_Img img3">
-                                        <div style="background-color: burlywood;"></div>
-                                    </div>
-                                    <div class="books_text"></div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="books_Img img4">
-                                        <div style="background-color: darkorange;"></div>
-                                    </div>
-                                    <div class="books_text"></div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <span class="prev"><i class="fa-solid fa-chevron-left"></i></span>
-                <span class="next"><i class="fa-solid fa-chevron-right"></i></span>
-            </div>
-        </div>
-     </section>
-
-
-
-
-
-
-
-    <!-- footer -->
-    <footer>
-        <div class="top_foot">
-
-            <div class="top_foot_r">
-
-                <div class="f_box1">
-                    <a href="#"><img src="./img/customer_center.svg" alt="customer_center" id="c_c">고객센터</a>
-                    <a href="#"><img src="./img/notice.svg" alt="notice" id="notice">공지사항</a>
-                </div>
-                <div class="f_box2">
-                    <p>서비스</p>
-                    <a href="#">제휴카드</a>
-                    <a href="#">뷰어 다운로드</a>
-                    <a href="#">CP사이트</a>
-                    <a href="#">리디바탕</a>
-                </div>
-                <div class="f_box3">
-                    <p>기타 문의</p>
-                    <a href="#">콘텐츠 제공 문의</a>
-                    <a href="#">사업 제휴 문의</a>
-                </div>
-                <div class="f_box4">
-                    <p>회사</p>
-                    <a href="#">회사 소개</a>
-                    <a href="#">인재채용&nbsp;<span id="new">N</span></a>
-                </div>
-            </div>
-
-            <div class="top_foot_l">
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#" id="twitter"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="#" id="play"><i class="fa-solid fa-play"></i></a>
-                <a href="#"><img src="./img/tictik_icon.svg" alt="tictik_icon"></a>
-            </div>
-        </div>
-
-        <div class="bottom_foot">
-            <div>리디(주) 사업자 정보&nbsp;<i class="fa-solid fa-chevron-down"></i></div>
-            <ul>
-                <li>이용약관</li>
-                <li>|</li>
-                <li>개인정보 처리방침</li>
-                <li>|</li>
-                <li>청소년보호정책</li>
-                <li>|</li>
-                <li>사업자정보확인</li>
-            </ul>
-            <p>&copy; RIDI Corp.</p>
-        </div>
-    </footer>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="./js/main.js"></script>
+    <div class="bottom_foot">
+      <div>리디(주) 사업자 정보&nbsp;<i class="fa-solid fa-chevron-down"></i></div>
+      <ul>
+        <li>이용약관</li>
+        <li>|</li>
+        <li>개인정보 처리방침</li>
+        <li>|</li>
+        <li>청소년보호정책</li>
+        <li>|</li>
+        <li>사업자정보확인</li>
+      </ul>
+      <p>&copy; RIDI Corp.</p>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>
