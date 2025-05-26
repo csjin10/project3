@@ -80,9 +80,68 @@ bookData();
 
 
 
-// header
-// $(function () {
-//   $('.left_area > a').click(function () {
-//     $(this).addClass('header_click').siblings().removeClass('header_click');
-//   });
+// 이미지 뒷면 보임
+$(".book_imgs").click(function(){
+  $(this).toggleClass("rotate");
+});
+
+
+
+
+
+
+
+
+
+
+// 작품 정보 tab
+$(function(){
+  $(".tab li").click(function(){
+    let index = $(this).index();
+
+    $(".content li").eq(index).show().siblings().hide();
+    $(this).addClass("click").siblings().removeClass("click");
+  });
+});
+
+
+
+
+
+
+
+
+
+
+// 텍스트 불러오기
+$(function(){
+  $.get("./sub_txt/book_intro.txt", function(data){
+    $(".content li:first-child").html(data);
+  })
+});
+
+$(function(){
+  $.get("./sub_txt/book_contents.txt", function(data){
+    $(".content li:nth-of-type(2)").html(data);
+  })
+});
+
+$(function(){
+  $.get("./sub_txt/book_review.txt", function(data){
+    $(".content li:last-child").html(data);
+  })
+});
+
+// 텍스트 불러오기
+// document.addEventListener("DOMContentLoaded", async function () {
+//   try {
+//     const response = await fetch("./sub_txt/book_intro.txt");
+//     if (!response.ok) {
+//       throw new Error("Network response was not ok");
+//     }
+//     const data = await response.text();
+//     document.getElementById(".content li:first-child").innerHTML = data;
+//   } catch (error) {
+//     console.error("There was a problem with the fetch operation:", error);
+//   }
 // });
