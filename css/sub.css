@@ -172,7 +172,7 @@ header > div img {
 #detail_wrap #book_header .preview .book_imgs.rotate {
   transform: rotateY(180deg);
 }
-#detail_wrap #book_header .preview .book_imgs h4 {
+#detail_wrap #book_header .preview h4 {
   cursor: pointer;
   width: 100%;
   border: 1px solid #e6e6e6;
@@ -182,7 +182,7 @@ header > div img {
   color: #555;
   margin-top: 12px;
 }
-#detail_wrap #book_header .preview .book_imgs h4:hover {
+#detail_wrap #book_header .preview h4:hover {
   border: 1px solid #a5a5a5;
   transition: all 0.4s ease;
 }
@@ -525,10 +525,8 @@ header > div img {
 #detail_wrap #book_inf ul.tab li:nth-of-type(2) {
   border-right: 1px solid #cccccc;
 }
-#detail_wrap #book_inf ul.content li {
-  padding: 15px 0;
-}
 #detail_wrap #book_inf ul.content li p {
+  padding: 15px 0;
   font-size: 15px;
   color: #555;
   letter-spacing: 0.01px;
@@ -536,6 +534,53 @@ header > div img {
 }
 #detail_wrap #book_inf ul.content li:not(:nth-of-type(1)) {
   display: none;
+}
+#detail_wrap #book_inf ul.content li:last-child {
+  position: relative;
+}
+#detail_wrap #book_inf ul.content li:last-child p {
+  height: 255px;
+  overflow: hidden;
+}
+#detail_wrap #book_inf ul.content li:last-child div {
+  width: 875px;
+  height: 255px;
+  background-image: linear-gradient(rgba(255, 255, 255, 0) 30%, rgb(255, 255, 255));
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#detail_wrap #book_inf ul.content li:last-child button {
+  cursor: pointer;
+  width: 875px;
+  padding: 16px 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+}
+#detail_wrap #book_inf ul.content li:last-child button i {
+  font-size: 15px;
+}
+#detail_wrap #book_inf ul.content li:last-child button:hover {
+  color: #777;
+  transition: all 0.3s ease-out;
+}
+#detail_wrap #book_inf ul.content li:last-child button:hover i {
+  color: #777;
+  transition: all 0.3s ease-out;
+}
+#detail_wrap #book_author {
+  width: 100%;
+  margin-top: 60px;
+  padding: 0 30px;
+}
+#detail_wrap #book_author .title {
+  padding-bottom: 16px;
+}
+#detail_wrap #book_author .title h2 {
+  font-size: 22px;
 }
 
 #aside_wrap {

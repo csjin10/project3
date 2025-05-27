@@ -116,19 +116,36 @@ $(function(){
 // 텍스트 불러오기
 $(function(){
   $.get("./sub_txt/book_intro.txt", function(data){
-    $(".content li:first-child").html(data);
+    $("#book_inf .content li:first-child").html(data);
   })
 });
 
 $(function(){
   $.get("./sub_txt/book_contents.txt", function(data){
-    $(".content li:nth-of-type(2)").html(data);
+    $("#book_inf .content li:nth-of-type(2)").html(data);
   })
 });
 
 $(function(){
   $.get("./sub_txt/book_review.txt", function(data){
-    $(".content li:last-child").html(data);
+    $("#book_inf .content li:last-child").html(data);
+
+    // 텍스트 더보기
+    $(".scroll button").click(function(){
+     // 텍스트 펼치기
+      if($(".scroll p").outerHeight() === 255){
+        $(".scroll p").css("height","auto");
+        $(".scroll div").hide();
+        $(this).html('접기&nbsp;<i class="fa-solid fa-chevron-down"></i>');
+        $(this).children('i').removeClass('fa-chevron-down').addClass('fa-chevron-up');
+      } else {
+        // 텍스트 접기
+        $(".scroll p").css("height","255px");
+        $(".scroll div").show();
+        $(this).html('더보기&nbsp;<i class="fa-solid fa-chevron-down"></i>');
+        $(this).children('i').removeClass('fa-chevron-up').addClass('fa-chevron-down');
+      }      
+    });
   })
 });
 
@@ -145,3 +162,14 @@ $(function(){
 //     console.error("There was a problem with the fetch operation:", error);
 //   }
 // });
+
+
+
+
+
+
+
+
+
+
+// 텍스트 더보기
