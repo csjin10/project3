@@ -25,7 +25,7 @@ async function fetchBooks(query) {
 
 async function bookData() {
   try {
-    const querys = ['팀 보울러', '에세이', '소설', '로맨스판타지', '이', '바다', '숲', '캘린더'];
+    const querys = ['팀 보울러', '오만과 편견', '류경희'];
 
     querys.forEach(async (query, i) => {
       const data = await fetchBooks(query);
@@ -38,30 +38,13 @@ async function bookData() {
 
 
 
-      // for문
-      const bookDetail = $('section').eq(i).find('.book_detail');
+      const booksImg = $('section').eq(i).find('.book_img');
+      const booksInf = $('section').eq(i).find('.book_inf');
 
-      for (let j = 0; j < bookDetail.length; j++) {
-        bookDetail.eq(j).append("<a href='#'><img src=" + data.documents[j].thumbnail + "></a>");
-        bookDetail.eq(j).append("<h3>" + (j + 1) + "</h3>");
-
-        bookDetail.eq(j).append("<div>" + "<h4>" + data.documents[j].title + "</h4>" + "<h5>" + data.documents[j].authors + "</h5>" + "</div>");
-      }
-
-
-
-      const booksIg = $('section').eq(i).find('.books_Img');
-      const booksText = $('section').eq(i).find('.books_text');
-
-      for (let j = 0; j < booksIg.length; j++) {
-        booksIg.eq(j).append("<img src=" + data.documents[j].thumbnail + ">");
-      }
-      for (let j = 0; j < booksText.length; j++) {
-        booksText.eq(j).append("<h4><" + data.documents[j].title + "></h4>");
-        booksText.eq(j).append("<p>" + data.documents[j].authors + "</p>");
-      }
-
-
+      for (let j = 0; j < booksImg.length; j++) {
+        booksImg.eq(j).append("<img src=" + data.documents[j].thumbnail + ">");
+        booksInf.eq(j).append("<div><h4>" + data.documents[j].title + "</h4><p>" + data.documents[j].authors + "</p></div>");
+      }      
 
     })
   } catch (error) {
@@ -104,6 +87,25 @@ $(function(){
   });
 });
 
+// 작가 tab
+$(function(){
+  $(".author_tab li").click(function(){
+    let index = $(this).index();
+
+    $(".author_content> li").eq(index).show().siblings().hide();
+    $(this).addClass("click").siblings().removeClass("click");
+  });
+});
+
+// 작가 sub tab
+$(function(){
+  $(".author_sub_tab li").click(function(){
+    let index = $(this).index();
+
+    $(".author_sub_content> li").eq(index).show().siblings().hide();
+    $(this).addClass("click").siblings().removeClass("click");
+  });
+});
 
 
 
@@ -149,6 +151,12 @@ $(function(){
   })
 });
 
+$(function(){
+  $.get("./sub_txt/author_intro.txt", function(data){
+    $(".author_content> li:last-child").html(data);
+  })
+});
+
 // 텍스트 불러오기
 // document.addEventListener("DOMContentLoaded", async function () {
 //   try {
@@ -162,6 +170,29 @@ $(function(){
 //     console.error("There was a problem with the fetch operation:", error);
 //   }
 // });
+
+
+
+
+
+
+
+// slider
+$(".author_book .prev").click(function () {
+  $('.author_book .author_slider ul').css({ "margin-left": -881 });
+  $('.author_book .author_slider ul').stop().animate({ "margin-left": 0 }, 300, function () {
+    $(".author_book .prev").css({ "display": "none" });
+    $(".author_book .next").css({ "display": "block" });
+  });
+});
+
+$(".author_book .next").click(function () {
+  $(".author_book .author_slider ul").stop().animate({ "margin-left": -881 }, 300, function () {
+    $('.author_book .author_slider ul').css({ "margin-left": -881 });
+    $(".author_book .prev").css({ "display": "block" });
+    $(".author_book .next").css({ "display": "none" });
+  });
+});
 
 
 

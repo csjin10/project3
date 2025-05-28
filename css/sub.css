@@ -576,13 +576,303 @@ header > div img {
   margin-top: 60px;
   padding: 0 30px;
 }
-#detail_wrap #book_author .title {
+#detail_wrap #book_author > .title {
   padding-bottom: 16px;
 }
-#detail_wrap #book_author .title h2 {
+#detail_wrap #book_author > .title h2 {
   font-size: 22px;
 }
-
+#detail_wrap #book_author ul {
+  display: flex;
+}
+#detail_wrap #book_author ul.author_tab {
+  border-top: 2px solid #787878;
+}
+#detail_wrap #book_author ul.author_tab li {
+  font-weight: 600;
+  font-size: 18px;
+  width: 50%;
+  padding: 14px 0;
+  text-align: center;
+  background-color: #f5f5f5;
+  color: #a5a5a5;
+  border-bottom: 1px solid #cccccc;
+  cursor: pointer;
+}
+#detail_wrap #book_author ul.author_tab .click {
+  background-color: #fff;
+  color: #141414;
+  border-bottom: none;
+}
+#detail_wrap #book_author ul.author_tab li:nth-of-type(1) {
+  border-right: 1px solid #cccccc;
+}
+#detail_wrap #book_author ul.author_content ol {
+  display: flex;
+}
+#detail_wrap #book_author ul.author_content > li:first-child {
+  padding: 15px 0;
+}
+#detail_wrap #book_author ul.author_content > li:first-child .author_sub_tab div {
+  padding: 0 4px;
+  margin-bottom: 2px;
+  font-size: 13px;
+  font-weight: 400;
+  color: #e6e6e6;
+}
+#detail_wrap #book_author ul.author_content > li:first-child .author_sub_tab li {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #f5f5f5;
+  color: #787878;
+  padding: 10px 12px 9px;
+  border-radius: 100px;
+  line-height: 19px;
+}
+#detail_wrap #book_author ul.author_content > li:first-child .author_sub_tab li:last-child {
+  margin-left: 10px;
+}
+#detail_wrap #book_author ul.author_content > li:first-child .author_sub_tab .click {
+  background-color: #141414;
+  color: #fff;
+  font-weight: 600;
+}
+#detail_wrap #book_author ul.author_content > li:first-child .author_sub_tab .click div {
+  color: #fff;
+  opacity: 0.2;
+}
+#detail_wrap #book_author ul.author_content > li:first-child .author_sub_content > li:last-child {
+  display: none;
+}
+#detail_wrap #book_author ul.author_content > li:first-child .author_sub_content .author_inf {
+  border-bottom: 1px solid #f0f0f0;
+}
+#detail_wrap #book_author ul.author_content > li:first-child .author_sub_content .author_inf .author_header {
+  padding: 15px 0 10px 0;
+  display: flex;
+}
+#detail_wrap #book_author ul.author_content > li:first-child .author_sub_content .author_inf .author_header h2 {
+  font-size: 22px;
+  cursor: pointer;
+}
+#detail_wrap #book_author ul.author_content > li:first-child .author_sub_content .author_inf .author_header h2 span {
+  font-size: 14px;
+  color: #a5a5a5;
+}
+#detail_wrap #book_author ul.author_content > li:first-child .author_sub_content .author_inf .author_header h2:hover {
+  opacity: 0.6;
+}
+#detail_wrap #book_author ul.author_content > li:first-child .author_sub_content .author_inf .author_header button {
+  cursor: pointer;
+  margin-left: 9px;
+  padding: 6px 0;
+  width: 157px;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #fff;
+  color: #1E9EFF;
+  border: 1px solid currentColor;
+  border-radius: 100px;
+}
+#detail_wrap #book_author ul.author_content > li:first-child .author_sub_content .author_inf .author_header button i {
+  color: #1E9EFF;
+  font-weight: 400;
+  font-size: 13px;
+}
+#detail_wrap #book_author ul.author_content > li:first-child .author_sub_content .author_inf .author_header button:hover {
+  color: #0080f6;
+}
+#detail_wrap #book_author ul.author_content > li:first-child .author_sub_content .author_inf .author_header button:hover i {
+  color: #0080f6;
+}
+#detail_wrap #book_author ul.author_content > li:first-child .author_sub_content .author_inf table {
+  line-height: 25px;
+}
+#detail_wrap #book_author ul.author_content > li:first-child .author_sub_content .author_inf table th {
+  width: 50px;
+  font-size: 15px;
+  color: #a5a5a5;
+  vertical-align: top;
+}
+#detail_wrap #book_author ul.author_content > li:first-child .author_sub_content .author_inf table td {
+  font-size: 15px;
+  color: #555555;
+}
+#detail_wrap #book_author ul.author_content > li:first-child .author_sub_content .author_inf .update {
+  width: 875px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 0 15px 0;
+}
+#detail_wrap #book_author ul.author_content > li:first-child .author_sub_content .author_inf .update h4 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #a5a5a5;
+  margin-right: 6px;
+}
+#detail_wrap #book_author ul.author_content > li:first-child .author_sub_content .author_inf .update button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 600;
+  background-color: #fff;
+  color: #666;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  padding: 2px 7px 4px;
+}
+#detail_wrap #book_author ul.author_content > li:first-child .author_sub_content .author_inf .update button i {
+  font-size: 8px;
+  color: #888;
+  padding-left: 1.5px;
+}
+#detail_wrap #book_author ul.author_content > li:first-child .author_sub_content .author_inf .update button:hover {
+  opacity: 0.6;
+  transition: all 0.4s ease;
+}
+#detail_wrap #book_author ul.author_content > li:first-child .author_sub_content .author_book {
+  position: relative;
+  padding-top: 20px;
+}
+#detail_wrap #book_author ul.author_content > li:first-child .author_sub_content .author_book .title {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+#detail_wrap #book_author ul.author_content > li:first-child .author_sub_content .author_book .title h3 {
+  font-size: 18px;
+}
+#detail_wrap #book_author ul.author_content > li:first-child .author_sub_content .author_book .title h4 {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  color: #a5a5a5;
+}
+#detail_wrap #book_author ul.author_content > li:first-child .author_sub_content .author_book .author_slider > div {
+  width: 875px;
+  overflow: hidden;
+}
+#detail_wrap #book_author ul.author_content > li:first-child .author_sub_content .author_book .author_slider ul {
+  width: 1750px;
+}
+#detail_wrap #book_author ul.author_content > li:first-child .author_sub_content .author_book .author_slider .book_inf {
+  margin-right: 6px;
+}
+#detail_wrap #book_author ul.author_content > li:first-child .author_sub_content .author_book .author_slider .book_inf > a > .book_img {
+  width: 140.8333333333px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+#detail_wrap #book_author ul.author_content > li:first-child .author_sub_content .author_book .author_slider .book_inf > a > .book_img img {
+  width: 100%;
+}
+#detail_wrap #book_author ul.author_content > li:first-child .author_sub_content .author_book .author_slider .book_inf > a > .book_img > div {
+  display: flex;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transform: translateY(-84%);
+  border-top-right-radius: 5px;
+  overflow: hidden;
+}
+#detail_wrap #book_author ul.author_content > li:first-child .author_sub_content .author_book .author_slider .book_inf > a > .book_img .rent {
+  width: 28px;
+}
+#detail_wrap #book_author ul.author_content > li:first-child .author_sub_content .author_book .author_slider .book_inf > a > .book_img .rent img {
+  width: 100%;
+  background-color: grey;
+}
+#detail_wrap #book_author ul.author_content > li:first-child .author_sub_content .author_book .author_slider .book_inf > a > .book_img .sale {
+  width: 28px;
+}
+#detail_wrap #book_author ul.author_content > li:first-child .author_sub_content .author_book .author_slider .book_inf > a > .book_img .sale img {
+  width: 100%;
+  background-color: rgb(231, 44, 44);
+}
+#detail_wrap #book_author ul.author_content > li:first-child .author_sub_content .author_book .author_slider .book_inf > a > .book_img .select {
+  width: 28px;
+}
+#detail_wrap #book_author ul.author_content > li:first-child .author_sub_content .author_book .author_slider .book_inf > a > .book_img .select img {
+  width: 100%;
+  background-color: darkkhaki;
+}
+#detail_wrap #book_author ul.author_content > li:first-child .author_sub_content .author_book .author_slider .book_inf > div {
+  line-height: 20px;
+  padding-top: 8px;
+}
+#detail_wrap #book_author ul.author_content > li:first-child .author_sub_content .author_book .author_slider .book_inf > div h4 {
+  font-weight: 500;
+  width: 100%;
+  word-break: keep-all;
+  overflow: hidden;
+  display: inline-block;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  cursor: pointer;
+}
+#detail_wrap #book_author ul.author_content > li:first-child .author_sub_content .author_book .author_slider .book_inf > div p {
+  font-size: 14px;
+  opacity: 0.6;
+  padding-top: 2px;
+  cursor: pointer;
+}
+#detail_wrap #book_author ul.author_content > li:first-child .author_sub_content .author_book .author_slider .book_inf > div p:hover {
+  opacity: 0.4;
+}
+#detail_wrap #book_author ul.author_content > li:first-child .author_sub_content .author_book .author_slider > span {
+  position: relative;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0px 0px 1px 0px #eee;
+  cursor: pointer;
+}
+#detail_wrap #book_author ul.author_content > li:first-child .author_sub_content .author_book .author_slider > span i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  opacity: 0.9;
+}
+#detail_wrap #book_author ul.author_content > li:first-child .author_sub_content .author_book .author_slider > span:hover i {
+  opacity: 0.4;
+  transition: all 0.2s ease-out;
+}
+#detail_wrap #book_author ul.author_content > li:first-child .author_sub_content .author_book .author_slider .prev {
+  left: -19px;
+  display: none;
+}
+#detail_wrap #book_author ul.author_content > li:first-child .author_sub_content .author_book .author_slider .next {
+  right: -19px;
+  display: block;
+}
+#detail_wrap #book_author ul.author_content > li:last-child {
+  display: none;
+}
+#detail_wrap #book_author ul.author_content > li:last-child p {
+  padding: 15px 0;
+  font-size: 15px;
+  color: #555;
+  letter-spacing: 0.01px;
+  line-height: 23px;
+}
 #aside_wrap {
   width: 20%;
 }
