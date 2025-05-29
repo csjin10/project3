@@ -873,6 +873,309 @@ header > div img {
   letter-spacing: 0.01px;
   line-height: 23px;
 }
+#detail_wrap #book_review {
+  padding: 0 30px;
+  margin-top: 80px;
+}
+#detail_wrap #book_review > h2 {
+  font-size: 22px;
+  padding-bottom: 23px;
+}
+#detail_wrap #book_review .review_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #e6e6e6;
+}
+#detail_wrap #book_review .review_header .review_header_left {
+  display: flex;
+  align-items: flex-end;
+}
+#detail_wrap #book_review .review_header .review_header_left h1 {
+  font-size: 48px;
+  line-height: 50px;
+}
+#detail_wrap #book_review .review_header .review_header_left > div {
+  padding-left: 10px;
+}
+#detail_wrap #book_review .review_header .review_header_left > div h4 {
+  font-size: 15px;
+  margin-bottom: -1px;
+}
+#detail_wrap #book_review .review_header .review_header_left > div i {
+  font-size: 15px;
+  width: 15px;
+  color: #DC3232;
+}
+#detail_wrap #book_review .review_header .review_header_right {
+  text-align: right;
+}
+#detail_wrap #book_review .review_header .review_header_right h4 {
+  font-size: 15px;
+  font-weight: 500;
+  color: #787878;
+}
+#detail_wrap #book_review .review_header .review_header_right h5 {
+  cursor: pointer;
+  font-size: 15px;
+  color: #787878;
+}
+#detail_wrap #book_review .review_header .review_header_right h5 i {
+  color: #787878;
+}
+#detail_wrap #book_review .review_score {
+  text-align: center;
+  padding: 40px 0;
+}
+#detail_wrap #book_review .review_score h4 {
+  font-size: 15px;
+  color: #a5a5a5;
+  font-weight: 500;
+}
+#detail_wrap #book_review .review_score .star_score {
+  padding-top: 20px;
+  cursor: default;
+}
+#detail_wrap #book_review .review_score .star_score i {
+  font-size: 45px;
+  color: #e6e6e6;
+  cursor: pointer;
+}
+#detail_wrap #book_review .review_input {
+  padding: 15px 15px;
+  width: 875px;
+  border: 1px solid #e6e6e6;
+  border-radius: 7px;
+}
+#detail_wrap #book_review .review_input:focus-within {
+  border-color: #1E9EFF;
+}
+#detail_wrap #book_review .review_input textarea {
+  width: 100%;
+  height: 72px;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  font-size: 14.5px;
+  font-family: "Noto Sans KR", "Noto Serif KR";
+  opacity: 0.6;
+}
+#detail_wrap #book_review .review_input form {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 0;
+}
+#detail_wrap #book_review .review_input form label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+#detail_wrap #book_review .review_input form input {
+  display: none;
+}
+#detail_wrap #book_review .review_input form .checkmark {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1px solid #d1d1d1;
+  position: relative;
+}
+#detail_wrap #book_review .review_input form .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 9px;
+  height: 100%;
+  background-image: url("../img/check.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#detail_wrap #book_review .review_input form input:checked + .checkmark {
+  background-color: #1E9EFF;
+  border-color: #1E9EFF;
+}
+#detail_wrap #book_review .review_input form input:checked + .checkmark:after {
+  display: block;
+}
+#detail_wrap #book_review .review_input form span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #787878;
+  margin-left: 6px;
+}
+#detail_wrap #book_review .review_input form button {
+  padding: 7px 17px;
+  background-color: #ccc;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+}
+#detail_wrap #book_review > h5 {
+  cursor: pointer;
+  width: 129px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #787878;
+}
+#detail_wrap #book_review > h5 i {
+  font-size: 12px;
+  color: #787878;
+  padding-left: 4px;
+}
+#detail_wrap #book_review ul {
+  display: flex;
+}
+#detail_wrap #book_review ul.review_tab {
+  border-top: 2px solid #787878;
+}
+#detail_wrap #book_review ul.review_tab li {
+  font-weight: 600;
+  font-size: 18px;
+  width: 50%;
+  padding: 14px 0;
+  text-align: center;
+  background-color: #f5f5f5;
+  color: #a5a5a5;
+  border-bottom: 1px solid #cccccc;
+  cursor: pointer;
+}
+#detail_wrap #book_review ul.review_tab .click {
+  background-color: #fff;
+  color: #141414;
+  border-bottom: none;
+}
+#detail_wrap #book_review ul.review_tab li:nth-of-type(1) {
+  border-right: 1px solid #cccccc;
+}
+#detail_wrap #book_review ul.review_content ol {
+  display: flex;
+}
+#detail_wrap #book_review ul.review_content > li {
+  padding: 15px 0;
+}
+#detail_wrap #book_review ul.review_content > li:first-child .review_sub_tab li {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #f5f5f5;
+  color: #787878;
+  padding: 10px 12px 9px;
+  border-radius: 100px;
+  line-height: 19px;
+  margin-right: 10px;
+}
+#detail_wrap #book_review ul.review_content > li:first-child .review_sub_tab .click {
+  background-color: #141414;
+  color: #fff;
+  font-weight: 600;
+}
+#detail_wrap #book_review ul.review_content > li:first-child .review_sub_tab .click div {
+  color: #fff;
+  opacity: 0.2;
+}
+#detail_wrap #book_review ul.review_content > li:first-child .review_sub_content > li:not(:first-child) {
+  display: none;
+}
+#detail_wrap #book_review ul.review_content > li:first-child .review_sub_content table {
+  width: 100%;
+  border-bottom: 1px solid #e6e6e6;
+  padding: 20px 0 25px 0;
+}
+#detail_wrap #book_review ul.review_content > li:first-child .review_sub_content table i {
+  font-size: 11px;
+  width: 10px;
+  color: #DC3232;
+}
+#detail_wrap #book_review ul.review_content > li:first-child .review_sub_content table .review_text p {
+  font-size: 15px;
+  line-height: 23px;
+}
+#detail_wrap #book_review ul.review_content > li:first-child .review_sub_content table .id {
+  display: flex;
+  align-items: center;
+}
+#detail_wrap #book_review ul.review_content > li:first-child .review_sub_content table .id button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  height: 16px;
+  width: 34px;
+  background-color: #fff;
+  border: 1px solid #d5d5d5;
+  border-radius: 3px;
+}
+#detail_wrap #book_review ul.review_content > li:first-child .review_sub_content table .id button span {
+  color: #a5a5a5;
+}
+#detail_wrap #book_review ul.review_content > li:first-child .review_sub_content table .id h5 {
+  color: #a5a5a5;
+  padding-left: 4px;
+}
+#detail_wrap #book_review ul.review_content > li:first-child .review_sub_content table .date {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #a5a5a5;
+}
+#detail_wrap #book_review ul.review_content > li:first-child .review_sub_content table .date .aa {
+  color: #a5a5a5;
+  cursor: pointer;
+}
+#detail_wrap #book_review ul.review_content > li:first-child .review_sub_content table .date .border {
+  font-size: 10px;
+  color: #a5a5a5;
+  margin-bottom: 2px;
+  padding: 0 6px;
+  color: #eee;
+}
+#detail_wrap #book_review ul.review_content > li:first-child .review_sub_content table .date .dot {
+  padding: 0 3px;
+  color: #eee;
+}
+#detail_wrap #book_review ul.review_content > li:first-child .review_sub_content table .btn {
+  text-align: right;
+  width: 40%;
+}
+#detail_wrap #book_review ul.review_content > li:first-child .review_sub_content table .btn button {
+  cursor: pointer;
+  width: 65px;
+  height: 33px;
+  background-color: #fff;
+  border: 1px solid #d5d5d5;
+  border-radius: 5px;
+  margin-left: 6px;
+  vertical-align: bottom;
+}
+#detail_wrap #book_review ul.review_content > li:first-child .review_sub_content table .btn button span {
+  color: #787878;
+  font-weight: 500;
+}
+#detail_wrap #book_review ul.review_content > li:first-child .review_sub_content table .btn button span i {
+  color: #a5a5a5;
+  font-size: 13px;
+  margin-right: 6px;
+}
+#detail_wrap #book_review ul.review_content > li:last-child {
+  display: none;
+}
+#detail_wrap #book_review ul.review_content > li:last-child p {
+  padding: 15px 0;
+  font-size: 15px;
+  color: #555;
+  letter-spacing: 0.01px;
+  line-height: 23px;
+}
+
 #aside_wrap {
   width: 20%;
 }

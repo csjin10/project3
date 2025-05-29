@@ -42,7 +42,6 @@ async function bookData() {
 
 
 
-      // for문
       const bookDetail = $('section').eq(i).find('.book_detail');
 
       for (let j = 0; j < bookDetail.length; j++) {

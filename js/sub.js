@@ -157,6 +157,31 @@ $(function(){
   })
 });
 
+// 리뷰 텍스트 불러오기
+$(function(){
+  $.get("./sub_txt/review_20250513.txt", function(data){
+    $(".box1 .review_text").html(data);
+  })
+});
+
+$(function(){
+  $.get("./sub_txt/review_20250228.txt", function(data){
+    $(".box2 .review_text").html(data);
+  })
+});
+
+$(function(){
+  $.get("./sub_txt/review_20240430.txt", function(data){
+    $(".box3 .review_text").html(data);
+  })
+});
+
+$(function(){
+  $.get("./sub_txt/review_20190617.txt", function(data){
+    $(".box4 .review_text").html(data);
+  })
+});
+
 // 텍스트 불러오기
 // document.addEventListener("DOMContentLoaded", async function () {
 //   try {
