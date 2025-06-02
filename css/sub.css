@@ -166,7 +166,7 @@ header > div img {
   left: 0;
 }
 #detail_wrap #book_header .preview .book_imgs:hover {
-  transform: rotateY(35deg);
+  transform: perspective(15cm) rotateY(35deg);
   cursor: url("../img/rotate180.svg"), pointer !important;
 }
 #detail_wrap #book_header .preview .book_imgs.rotate {
@@ -180,7 +180,7 @@ header > div img {
   padding: 11px 0;
   text-align: center;
   color: #555;
-  margin-top: 12px;
+  margin-top: 20px;
 }
 #detail_wrap #book_header .preview h4:hover {
   border: 1px solid #a5a5a5;
@@ -1058,7 +1058,7 @@ header > div img {
   display: flex;
 }
 #detail_wrap #book_review ul.review_content > li {
-  padding: 15px 0;
+  padding-top: 15px;
 }
 #detail_wrap #book_review ul.review_content > li .review_sub_tab li {
   cursor: pointer;
@@ -1200,6 +1200,19 @@ header > div img {
 }
 #detail_wrap #book_review ul.review_content > li:last-child {
   display: none;
+}
+#detail_wrap #book_review > h6 {
+  cursor: pointer;
+  width: 203px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #787878;
+  padding-top: 10px;
+}
+#detail_wrap #book_review > h6 i {
+  font-size: 12px;
+  color: #787878;
+  padding-left: 4px;
 }
 
 #aside_wrap {
@@ -1509,7 +1522,7 @@ footer {
 }
 #modal .bg .popup .modal_front .front_content > div#first_ch {
   display: none;
-  height: 805px;
+  height: 800px;
 }
 #modal .bg .popup .modal_front .front_content > div#first_ch h4 {
   text-align: center;

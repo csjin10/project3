@@ -45,7 +45,7 @@ async function bookData() {
       const bookDetail = $('section').eq(i).find('.book_detail');
 
       for (let j = 0; j < bookDetail.length; j++) {
-        bookDetail.eq(j).append("<a href='#'><img src=" + data.documents[j].thumbnail + "></a>");
+        bookDetail.eq(j).append("<a href='./sub.html'><img src=" + data.documents[j].thumbnail + "></a>");
         bookDetail.eq(j).append("<h3>" + (j + 1) + "</h3>");
 
         bookDetail.eq(j).append("<div>" + "<h4>" + data.documents[j].title + "</h4>" + "<h5>" + data.documents[j].authors + "</h5>" + "</div>");
@@ -117,36 +117,39 @@ $(function () {
 
 // slider
 
-/* function prev(){
-    $("#slider> div:last").prependTo("#slider").css({"flex-grow":0,"flex-basis":"41px"});
-    $("#slider> div:first").stop().animate({"flex-grow":1,"flex-basis":"0px"},800);
-    $("#slider> div:nth-of-type(3)").stop().animate({"flex-grow":0,"flex-basis":"41px"},800);
-    $("#slider> div:nth-of-type(2)").stop().animate({"flex-grow":0,"flex-basis":"41px"},800);
-}
+// function prev(){
+//     $("#slider> div:last").prependTo("#slider").css({"flex-grow":0,"flex-basis":"41px"});
+//     $("#slider> div:first").stop().animate({"flex-grow":1,"flex-basis":"0px"},800);
+//     $("#slider> div:nth-of-type(3)").stop().animate({"flex-grow":0,"flex-basis":"41px"},800);
+//     $("#slider> div:nth-of-type(2)").stop().animate({"flex-grow":0,"flex-basis":"41px"},800);
+// }
 
-function next(){
-    $("#slider> div:first").stop().animate({"flex-grow":0,"flex-basis":"0px"},800);
-    // $("#slider> div:nth-of-type(4)").animate({"flex-grow":0,"flex-basis":"41px"},800);
-    $("#slider> div:nth-of-type(2)").animate({"flex-grow":1,"flex-basis":"0px"},800,function(){
-        $("#slider> div:first").appendTo("#slider");
-    });
-} */
-
-
+// function next(){
+//     $("#slider> div:first").stop().animate({"flex-grow":0,"flex-basis":"0px"},800);
+//     $("#slider> div:nth-of-type(3)").animate({"flex-grow":0,"flex-basis":"41px"},800);
+//     $("#slider> div:nth-of-type(2)").animate({"flex-grow":1,"flex-basis":"0px"},800,function(){
+//         $("#slider> div:first").appendTo("#slider");
+//     });
+// }
 
 
+
+$("#slider> div:first").css({ "width": "1043px" });
 
 function prev() {
   $("#slider> div:last").prependTo("#slider").css({ "width": "41px" });
-  $("#slider> div:first").stop().animate({ "width": "1010px" }, 800);
-  $("#slider> div:nth-of-type(3)").stop().animate({ "width": "41px" }, 800);
   $("#slider> div:nth-of-type(2)").stop().animate({ "width": "41px" }, 800);
+  $("#slider> div:first").stop().animate({ "width": "1043px" }, 800);
+  // $("#slider> div:nth-of-type(3)").stop().animate({ "width": "41px" }, 800);
+  
 }
 
 function next() {
-  $("#slider> div:first").stop().animate({ "width": "41px" }, 800);
+  $("#slider> div:first").stop().animate({ "width": "0px" }, 800, function(){
+    $("#slider> div:first").css({ "width": "41px" });
+  });
   $("#slider> div:nth-of-type(3)").stop().animate({ "width": "41px" }, 800);
-  $("#slider> div:nth-of-type(2)").stop().animate({ "width": "1010px" }, 800, function () {
+  $("#slider> div:nth-of-type(2)").stop().animate({ "width": "1043px" }, 800, function () {
     $("#slider> div:first").appendTo("#slider");
   });
 }

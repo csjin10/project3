@@ -25,7 +25,7 @@ async function fetchBooks(query) {
 
 async function bookData() {
   try {
-    const querys = ['팀 보울러', '오만과 편견', '류경희'];
+    const querys = ['팀 보울러', '오만과 편견', '류경희', '문학동네'];
 
     querys.forEach(async (query, i) => {
       const data = await fetchBooks(query);
@@ -165,12 +165,15 @@ $(function () {
   });
 });
 
-// 모달 tab
+// 미리보기창 tab
 $(function () {
-  $(".side_content li").click(function(){
-    let index = $(this).index();
-    
-    $(".front_content> div").eq(index).show().siblings().hide();
+  $(".side_content li:nth-of-type(1)").click(function(){
+    $(".front_content> div").eq(0).show().siblings().hide();
+    $(this).addClass("click").siblings().removeClass("click");
+  });
+
+  $(".side_content li:nth-of-type(6)").click(function(){
+    $(".front_content> div").eq(1).show().siblings().hide();
     $(this).addClass("click").siblings().removeClass("click");
   });
 });
@@ -326,4 +329,27 @@ $(".preview> h4").click(function(){
 
 $(".front_header> button").click(function(){
   $("#modal").hide();
+});
+
+
+// 미리보기창 글자 크기조절
+let size = 19;
+let sub_size = 13;
+
+$(".text_size th").click(function(){
+  let idx = $(this).index();
+
+  if(idx == 0){
+    size -= 1;
+    sub_size -= 1;
+    $("#first_ch p").css('font-size', size+'px');
+    $("#first_ch p> span").css('font-size', sub_size+'px');
+    $(this).addClass('reSize').siblings().removeClass('reSize')
+  }else{
+    size += 1;
+    sub_size += 1;
+    $("#first_ch p").css('font-size', size+'px');
+    $("#first_ch p> span").css('font-size', sub_size+'px');
+    $(this).addClass('reSize').siblings().removeClass('reSize')
+  }
 });
