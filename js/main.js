@@ -139,9 +139,7 @@ $("#slider> div:first").css({ "width": "1043px" });
 function prev() {
   $("#slider> div:last").prependTo("#slider").css({ "width": "41px" });
   $("#slider> div:nth-of-type(2)").stop().animate({ "width": "41px" }, 800);
-  $("#slider> div:first").stop().animate({ "width": "1043px" }, 800);
-  // $("#slider> div:nth-of-type(3)").stop().animate({ "width": "41px" }, 800);
-  
+  $("#slider> div:first").stop().animate({ "width": "1043px" }, 800);  
 }
 
 function next() {
@@ -154,7 +152,7 @@ function next() {
   });
 }
 
-// setInterval(next,5000); // 자동 슬라이드
+setInterval(next,5000); // 자동 슬라이드
 
 // 버튼 슬라이드
 $("#slider_wrap .prev").click(function () {
