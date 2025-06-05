@@ -932,14 +932,17 @@ header > div img {
   font-size: 15px;
   color: #a5a5a5;
   font-weight: 500;
+  cursor: default;
 }
 #detail_wrap #book_review .review_score .star_score {
   padding-top: 20px;
-  cursor: default;
+  display: flex;
+  justify-content: center;
 }
 #detail_wrap #book_review .review_score .star_score i {
   font-size: 45px;
   color: #e6e6e6;
+  padding: 0 3px;
   cursor: pointer;
 }
 #detail_wrap #book_review .review_input {
